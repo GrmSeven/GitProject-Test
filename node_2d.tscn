@@ -6,6 +6,9 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(574, 316)
+position = Vector2(1758, 819)
+rotation = -0.359538
+scale = Vector2(4.665, 2.09)
+skew = -0.933751
 texture = ExtResource("1_3yp4g")
 script = ExtResource("1_5co5n")
