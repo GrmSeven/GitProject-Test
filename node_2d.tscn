@@ -7,7 +7,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-2, 1.00012)
+position = Vector2(5691, -1992)
 rotation = -0.359538
 scale = Vector2(1.39375, 0.966999)
 skew = -0.933751
@@ -15,6 +15,7 @@ texture = ExtResource("1_3yp4g")
 script = ExtResource("1_5co5n")
 
 [node name="Icannotdescribehowhappyiam" type="Sprite2D" parent="."]
+modulate = Color(1, 0.223529, 0.203922, 1)
 position = Vector2(-708, 403)
 scale = Vector2(0.470833, 2.37778)
 texture = ExtResource("3_tnrd2")
