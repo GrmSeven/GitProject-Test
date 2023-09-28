@@ -7,7 +7,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-2, 1.00012)
+position = Vector2(5691, -1992)
 rotation = -0.359538
 scale = Vector2(1.39375, 0.966999)
 skew = -0.933751
