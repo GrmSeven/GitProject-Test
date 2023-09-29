@@ -1,23 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://dxw660ykjdih6"]
+[gd_scene load_steps=3 format=3 uid="uid://dxw660ykjdih6"]
 
-[ext_resource type="Texture2D" uid="uid://cn27t7yjqnq7o" path="res://icon.svg" id="1_3yp4g"]
-[ext_resource type="Script" path="res://Sprite2D.gd" id="1_5co5n"]
-[ext_resource type="Texture2D" uid="uid://calfei8ntloe7" path="res://assets/art/icannotdescribehowhappyiam.jpg" id="3_tnrd2"]
+[ext_resource type="Texture2D" uid="uid://cn27t7yjqnq7o" path="res://icon.svg" id="2_mc6l0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orxv7"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(5691, -1992)
-rotation = -0.359538
-scale = Vector2(1.39375, 0.966999)
-skew = -0.933751
-texture = ExtResource("1_3yp4g")
-script = ExtResource("1_5co5n")
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
-[node name="Icannotdescribehowhappyiam" type="Sprite2D" parent="."]
-modulate = Color(2.96, 1.78, 1, 0.78)
-z_index = -1
-position = Vector2(-708, 403)
-scale = Vector2(0.470833, 2.37778)
-texture = ExtResource("3_tnrd2")
-script = ExtResource("1_5co5n")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_orxv7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_mc6l0")
