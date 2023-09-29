@@ -21,3 +21,10 @@ position = Vector2(-708, 403)
 scale = Vector2(0.470833, 2.37778)
 texture = ExtResource("3_tnrd2")
 script = ExtResource("1_5co5n")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = -781.0
+offset_right = 8.0
+offset_bottom = 170.0
+text = "balls itch"
+minimap_width = 81
