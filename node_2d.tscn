@@ -8,22 +8,15 @@
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
-[node name="Icannotdescribehowhappyiam" type="Sprite2D" parent="."]
-modulate = Color(2.96, 1.78, 1, 0.78)
-z_index = -1
-position = Vector2(-708, 403)
-scale = Vector2(0.470833, 2.37778)
-texture = ExtResource("3_tnrd2")
-script = ExtResource("1_5co5n")
-
-[node name="TextEdit" type="TextEdit" parent="."]
-offset_left = -781.0
-offset_right = 8.0
-offset_bottom = 170.0
-text = "balls itch"
-minimap_width = 81
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("RectangleShape2D_orxv7")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 texture = ExtResource("2_mc6l0")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 61.0
+offset_top = -33.0
+offset_right = 451.0
+offset_bottom = 107.0
+text = "balls itch"
