@@ -1,5 +1,6 @@
 extends Area2D
 
+var AA: String = "UHH"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -9,3 +10,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_body_entered(body: Node2D):
+	if body.is_in_group("PlayerInteraction"):
+		print(AA)

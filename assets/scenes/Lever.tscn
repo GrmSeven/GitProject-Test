@@ -1,20 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dfaav5ydorplx"]
 
+[ext_resource type="Script" path="res://assets/scripts/Lever.gd" id="1_1odtl"]
 [ext_resource type="Texture2D" uid="uid://cgrem2x0gt6kb" path="res://magicc.png" id="1_irmiw"]
-
-[sub_resource type="GDScript" id="GDScript_720jd"]
-script/source = "extends Area2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_koqn3"]
 size = Vector2(82.1813, 37.5649)
@@ -23,13 +10,14 @@ size = Vector2(82.1813, 37.5649)
 
 [node name="Area2D" type="Area2D" parent="."]
 scale = Vector2(0.559738, 0.745377)
-script = SubResource("GDScript_720jd")
+script = ExtResource("1_1odtl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1.70379e-06, 0)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_koqn3")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 scale = Vector2(0.02, 0.02)
 texture = ExtResource("1_irmiw")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
