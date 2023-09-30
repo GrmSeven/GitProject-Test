@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://deu6jviaygkaa"]
+[gd_scene load_steps=6 format=3 uid="uid://dxw660ykjdih6"]
 
-[ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_l0ac3"]
-[ext_resource type="Texture2D" uid="uid://dhy4oaaob0ghg" path="res://assets/art/Tiles/tile_test.png" id="2_plxgh"]
-[ext_resource type="PackedScene" uid="uid://dhwia3qfcxupl" path="res://assets/scenes/Player.tscn" id="3_8uq0r"]
-[ext_resource type="Texture2D" uid="uid://8h8b6ihkt3g" path="res://assets/art/Tiles/nigtile.png" id="3_t1olp"]
+[ext_resource type="Texture2D" uid="uid://cn27t7yjqnq7o" path="res://assets/art/icon.svg" id="1_g0rjo"]
+[ext_resource type="PackedScene" uid="uid://ohxatc4nd5bs" path="res://assets/scenes/character_body_2d.tscn" id="1_hmqoy"]
+[ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="3_jwl8b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hk5nb"]
 texture = ExtResource("2_plxgh")
@@ -32,5 +31,9 @@ tile_set = SubResource("TileSet_7mori")
 format = 2
 layer_0/tile_data = PackedInt32Array(-2, 0, 0, -65536, 0, 0, 65535, 0, 0, 0, 0, 0, -1, 0, 0, -65535, 0, 0, -65534, 0, 0, 65533, 0, 0, 65534, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, -131069, 0, 0, -131068, 0, 0, -3, 0, 0, -4, 0, 0, -65538, 0, 0, -65537, 0, 0, -131072, 0, 0, -131071, 0, 0, -131070, 0, 0, -65539, 0, 0, -65532, 0, 0, -65533, 0, 0, -65531, 0, 0, -65530, 0, 0, -131067, 0, 0, 65532, 0, 0, -65540, 0, 0, -131066, 0, 0, 131068, 1, 0, 196604, 1, 0, 262140, 1, 0, 327676, 1, 0, 131069, 1, 0, 196605, 1, 0, 262141, 1, 0, 327677, 1, 0, 131070, 1, 0, 196606, 1, 0, 262142, 1, 0, 327678, 1, 0, 131071, 1, 0, 196607, 1, 0, 262143, 1, 0, 327679, 1, 0, 65536, 1, 0, 131072, 1, 0, 196608, 1, 0, 262144, 1, 0, 65537, 1, 0, 131073, 1, 0, 196609, 1, 0, 262145, 1, 0, 65538, 1, 0, 131074, 1, 0, 196610, 1, 0, 262146, 1, 0, 65539, 1, 0, 131075, 1, 0, 196611, 1, 0, 262147, 1, 0, 65540, 1, 0, 131076, 1, 0, 196612, 1, 0, 262148, 1, 0, 65541, 1, 0, 131077, 1, 0, 196613, 1, 0, 262149, 1, 0, 65542, 1, 0, 131078, 1, 0, 196614, 1, 0, 262150, 1, 0)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_8uq0r")]
-position = Vector2(-5, 69)
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_hmqoy")]
+position = Vector2(303, 94)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_jwl8b")
+bus = &"SFX"
