@@ -19,4 +19,6 @@ func on_music_volume_changed(value: float):
 	AudioServer.set_bus_volume_db(music_index, value_to_db(music_volume))
 
 func value_to_db(value: float) -> float:
+	if (value == 0):
+		return -INF
 	return 32 * (value - 1)
