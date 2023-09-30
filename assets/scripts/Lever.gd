@@ -14,3 +14,9 @@ func _process(delta):
 
 func on_player_interact():
 	print(AA)
+
+func can_interact():
+	pass
+	
+func cannot_interact():
+	pass
