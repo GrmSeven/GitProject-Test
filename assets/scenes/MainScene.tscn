@@ -337,6 +337,7 @@ sources/1 = SubResource("TileSetAtlasSource_ie2y8")
 texture_filter = 1
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(1, 0, 0, 1)
 script = ExtResource("1_oii5i")
 
 [node name="TileMap" type="TileMap" parent="."]
