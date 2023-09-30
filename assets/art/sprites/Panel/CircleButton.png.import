@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2dx78jwqkraj"
-path="res://.godot/imported/Delete button.png-f5043dfed6b2e5201a5cfb8a8eb15908.ctex"
+uid="uid://c7ejkq4s24plv"
+path="res://.godot/imported/CircleButton.png-dd7db3f6c0e63227f398f84976846210.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Panel/Delete button.png"
-dest_files=["res://.godot/imported/Delete button.png-f5043dfed6b2e5201a5cfb8a8eb15908.ctex"]
+source_file="res://assets/art/sprites/Panel/CircleButton.png"
+dest_files=["res://.godot/imported/CircleButton.png-dd7db3f6c0e63227f398f84976846210.ctex"]
 
 [params]
 

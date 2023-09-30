@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7ejkq4s24plv"
-path="res://.godot/imported/Button ○.png-cd0386963320edad88afa066e76e22e8.ctex"
+uid="uid://b8suy5jg4kp53"
+path="res://.godot/imported/triangleIcon.png-7e8a6957dda00e36e8b5cb315d7d86d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Panel/Button ○.png"
-dest_files=["res://.godot/imported/Button ○.png-cd0386963320edad88afa066e76e22e8.ctex"]
+source_file="res://assets/art/sprites/Panel/triangleIcon.png"
+dest_files=["res://.godot/imported/triangleIcon.png-7e8a6957dda00e36e8b5cb315d7d86d3.ctex"]
 
 [params]
 
