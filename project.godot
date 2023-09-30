@@ -15,6 +15,10 @@ run/main_scene="res://assets/scenes/node_2d.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://assets/art/icon.svg"
 
+[display]
+
+window/size/viewport_width=2048
+
 [importer_defaults]
 
 texture={
