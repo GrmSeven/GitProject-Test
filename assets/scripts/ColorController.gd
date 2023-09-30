@@ -4,7 +4,7 @@ var colors = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 var tween_active = false
 
 func _ready():
-	color = Color(1, 0, 0, 1)
+	color = Color(1, 1, 1, 1)
 
 func _process(_delta):
 	var shift_input = Input.is_action_pressed("shift_color")
