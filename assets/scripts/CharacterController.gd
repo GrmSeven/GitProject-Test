@@ -19,4 +19,4 @@ func _process(_delta):
 		$AnimationTree.set("parameters/Idle/blend_position", velocity)	
 		$AnimationTree.set("parameters/Walk/blend_position", velocity)
 		
-	move_and_slide() 
+	move_and_slide()
