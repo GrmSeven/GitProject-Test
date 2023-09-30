@@ -1,10 +1,10 @@
 [gd_scene load_steps=5 format=3 uid="uid://dxw660ykjdih6"]
 
-[ext_resource type="PackedScene" uid="uid://ohxatc4nd5bs" path="res://character_body_2d.tscn" id="1_hmqoy"]
-[ext_resource type="Texture2D" uid="uid://cn27t7yjqnq7o" path="res://icon.svg" id="2_mc6l0"]
+[ext_resource type="Texture2D" uid="uid://cn27t7yjqnq7o" path="res://assets/art/icon.svg" id="1_g0rjo"]
+[ext_resource type="PackedScene" uid="uid://ohxatc4nd5bs" path="res://assets/scenes/character_body_2d.tscn" id="1_hmqoy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_idars"]
-texture = ExtResource("2_mc6l0")
+texture = ExtResource("1_g0rjo")
 0:0/0 = 0
 0:0/0/probability = 0.19
 1:0/0 = 0
