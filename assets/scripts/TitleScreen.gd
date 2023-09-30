@@ -1,13 +1,20 @@
 extends Control
 
+@export var player: Node2D
+
 func _process(delta):
 	if (Input.is_action_just_pressed("pause")):
 		if (global.paused):
 			resume()
 		else:
 			pause()
+			
+func _ready():
+	if (!global.paused):
+		resume()
 
 func pause():
+	position = player.position
 	global.paused = true
 	show()
 

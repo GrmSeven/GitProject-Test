@@ -14,9 +14,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ihhpx")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(144, 81)
-
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
