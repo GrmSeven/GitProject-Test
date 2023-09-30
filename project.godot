@@ -11,13 +11,15 @@ config_version=5
 [application]
 
 config/name="GitProject"
-run/main_scene="res://assets/scenes/node_2d.tscn"
+run/main_scene="res://assets/scenes/Node2D.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://assets/art/icon.svg"
 
 [display]
 
 window/size/viewport_width=2048
+window/size/viewport_height=1152
+window/stretch/mode="canvas_items"
 
 [importer_defaults]
 

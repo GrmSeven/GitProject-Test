@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cghgut0sig2vf"
-path="res://.godot/imported/Heledam ver..png-ffff233fcc5d846b4e16e073bbe9cafb.ctex"
+uid="uid://8h8b6ihkt3g"
+path="res://.godot/imported/Tile2.png-f418795af6f4b4e0336381953e61fc9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/Heledam ver..png"
-dest_files=["res://.godot/imported/Heledam ver..png-ffff233fcc5d846b4e16e073bbe9cafb.ctex"]
+source_file="res://assets/art/tiles/Tile2.png"
+dest_files=["res://.godot/imported/Tile2.png-f418795af6f4b4e0336381953e61fc9a.ctex"]
 
 [params]
 
