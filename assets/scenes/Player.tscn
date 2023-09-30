@@ -1,16 +1,41 @@
-[gd_scene load_steps=6 format=3 uid="uid://dhwia3qfcxupl"]
+[gd_scene load_steps=10 format=3 uid="uid://dhwia3qfcxupl"]
 
 [ext_resource type="Script" path="res://assets/scripts/CharacterController.gd" id="1_botjh"]
-[ext_resource type="Texture2D" uid="uid://c3c0mi2u7jja4" path="res://assets/art/Heledam ver..png" id="2_7eoyg"]
+[ext_resource type="Texture2D" uid="uid://dy5pjk4l3noy" path="res://assets/art/player/Walk down.png" id="2_e0j6y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajrvk"]
+atlas = ExtResource("2_e0j6y")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn8yg"]
+atlas = ExtResource("2_e0j6y")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fq0y5"]
+atlas = ExtResource("2_e0j6y")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrn6d"]
+atlas = ExtResource("2_e0j6y")
+region = Rect2(108, 0, 36, 36)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rhx7y"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_7eoyg")
+"texture": SubResource("AtlasTexture_ajrvk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nn8yg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fq0y5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrn6d")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Down",
 "speed": 5.0
 }]
 
@@ -18,7 +43,7 @@ animations = [{
 size = Vector2(16, 7)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vj3qy"]
-size = Vector2(10, 10)
+size = Vector2(30, 30)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 motion_mode = 1
@@ -27,6 +52,7 @@ script = ExtResource("1_botjh")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_rhx7y")
+animation = &"Down"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)

@@ -13,7 +13,6 @@ func _process(delta):
 	if direction:
 		velocity = velocity.move_toward(direction * max_speed * (sprint_mult if sprint else 1), accel)
 		facing = direction.ceil()
-		$Area2D.position = facing * 15
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, accel)
 	move_and_slide()
