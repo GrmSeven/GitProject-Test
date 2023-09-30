@@ -9,6 +9,5 @@ func _on_sfx_volume_value_changed(value: float):
 func _on_music_volume_value_changed(value: float):
 	Options.on_music_volume_changed(value)
 
-
 func _on_play_sound_pressed():
 	$AudioStreamPlayer2D.play()
