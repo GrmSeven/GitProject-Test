@@ -1,7 +1,8 @@
-[gd_scene load_steps=29 format=3 uid="uid://jn3vu50gs0i2"]
+[gd_scene load_steps=31 format=3 uid="uid://jn3vu50gs0i2"]
 
 [ext_resource type="Script" path="res://assets/scripts/CharacterController.gd" id="1_botjh"]
-[ext_resource type="Texture2D" path="res://assets/art/player/PlayerSpritesheet.png" id="2_50j5i"]
+[ext_resource type="Texture2D" uid="uid://qa1axt1dck7d" path="res://assets/art/player/PlayerSpritesheet.png" id="2_50j5i"]
+[ext_resource type="Shader" path="res://assets/shaders/Vignette.gdshader" id="2_fmwci"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ttjrm"]
 size = Vector2(16, 7)
@@ -243,6 +244,11 @@ _data = {
 "walking_up": SubResource("Animation_mme13")
 }
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8cchm"]
+shader = ExtResource("2_fmwci")
+shader_parameter/player_position = null
+shader_parameter/color = Vector4(0.305, 0.298, 0.341, 1)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 texture_filter = 1
 motion_mode = 1
@@ -278,3 +284,12 @@ hframes = 16
 libraries = {
 "": SubResource("AnimationLibrary_fodoo")
 }
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = 10
+material = SubResource("ShaderMaterial_8cchm")
+offset_right = 1.0
+offset_bottom = 1.0
+scale = Vector2(500, 500)
+pivot_offset = Vector2(0.5, 0.5)
+color = Color(0, 0, 0, 1)
