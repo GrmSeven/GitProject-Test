@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://e0idar1oklhx"
-path="res://.godot/imported/Kang ver 1.png-fddf3f862cbe17b8fd71c88f015ed1e1.ctex"
+path="res://.godot/imported/LeverLeft.png-59b2b3bff902c1765526b288746c7eaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Kang ver 1.png"
-dest_files=["res://.godot/imported/Kang ver 1.png-fddf3f862cbe17b8fd71c88f015ed1e1.ctex"]
+source_file="res://assets/art/sprites/LeverLeft.png"
+dest_files=["res://.godot/imported/LeverLeft.png-59b2b3bff902c1765526b288746c7eaf.ctex"]
 
 [params]
 

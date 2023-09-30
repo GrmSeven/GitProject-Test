@@ -1,7 +1,7 @@
 [gd_scene load_steps=31 format=3 uid="uid://jn3vu50gs0i2"]
 
 [ext_resource type="Script" path="res://assets/scripts/CharacterController.gd" id="1_botjh"]
-[ext_resource type="Texture2D" path="res://assets/art/player/PlayerSpritesheet.png" id="2_50j5i"]
+[ext_resource type="Texture2D" uid="uid://qa1axt1dck7d" path="res://assets/art/player/PlayerSpritesheet.png" id="2_50j5i"]
 [ext_resource type="Shader" path="res://assets/shaders/Vignette.gdshader" id="2_fmwci"]
 [ext_resource type="Script" path="res://assets/scripts/PlayerInteractions.gd" id="4_2ane1"]
 

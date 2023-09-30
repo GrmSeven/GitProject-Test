@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtgnrv75ipxdd"
-path="res://.godot/imported/Kang ver 2.png-5bae8df978e7bdf7c1b7d0fe41bd5510.ctex"
+uid="uid://bdqq6a5fcldy"
+path="res://.godot/imported/Door.png-141428abb7d26fb09be3112fedcc08dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Kang ver 2.png"
-dest_files=["res://.godot/imported/Kang ver 2.png-5bae8df978e7bdf7c1b7d0fe41bd5510.ctex"]
+source_file="res://assets/art/sprites/Door.png"
+dest_files=["res://.godot/imported/Door.png-141428abb7d26fb09be3112fedcc08dc.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk85i7iyk4bnq"
-path="res://.godot/imported/S.png-26197e1c84afe0538099b0ad3832b8d0.ctex"
+uid="uid://bkvbyb02ua533"
+path="res://.godot/imported/KeyRight.png-6aeea57d175baa6ee5c1a537b642b836.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/S.png"
-dest_files=["res://.godot/imported/S.png-26197e1c84afe0538099b0ad3832b8d0.ctex"]
+source_file="res://assets/art/tutorial/KeyRight.png"
+dest_files=["res://.godot/imported/KeyRight.png-6aeea57d175baa6ee5c1a537b642b836.ctex"]
 
 [params]
 

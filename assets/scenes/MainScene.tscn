@@ -759,4 +759,5 @@ texture = ExtResource("6_frdhy")
 position = Vector2(300, 177)
 
 [node name="Pause" parent="." node_paths=PackedStringArray("player") instance=ExtResource("1_th0ne")]
+z_index = 11
 player = NodePath("../CharacterBody2D")

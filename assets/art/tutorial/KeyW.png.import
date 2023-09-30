@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8muocv6xjnl6"
-path="res://.godot/imported/Ring.png-3716a9778a7cd5d1599be6b5bb2cf1a8.ctex"
+uid="uid://c2op33wyrgsck"
+path="res://.godot/imported/KeyW.png-85ad80af2ed71199bc55fd3edf1882bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Ring.png"
-dest_files=["res://.godot/imported/Ring.png-3716a9778a7cd5d1599be6b5bb2cf1a8.ctex"]
+source_file="res://assets/art/tutorial/KeyW.png"
+dest_files=["res://.godot/imported/KeyW.png-85ad80af2ed71199bc55fd3edf1882bf.ctex"]
 
 [params]
 

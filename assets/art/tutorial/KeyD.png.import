@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1lh7evbb3cjx"
-path="res://.godot/imported/Ruut.png-5736c9f2a1b3b3d02b85a324ce0ee70c.ctex"
+uid="uid://b3uxlakpleyks"
+path="res://.godot/imported/KeyD.png-15467d85929cc0b1422d2698070b2bf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Ruut.png"
-dest_files=["res://.godot/imported/Ruut.png-5736c9f2a1b3b3d02b85a324ce0ee70c.ctex"]
+source_file="res://assets/art/tutorial/KeyD.png"
+dest_files=["res://.godot/imported/KeyD.png-15467d85929cc0b1422d2698070b2bf2.ctex"]
 
 [params]
 

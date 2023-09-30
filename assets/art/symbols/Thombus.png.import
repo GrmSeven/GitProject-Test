@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gcyeug5xffh5"
-path="res://.godot/imported/Q.png-52f2c79ef0b6c2e083199ef23a96f594.ctex"
+uid="uid://ck777scxda25h"
+path="res://.godot/imported/Thombus.png-5c63ed8e0d919e9832a99a611aa42a7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Q.png"
-dest_files=["res://.godot/imported/Q.png-52f2c79ef0b6c2e083199ef23a96f594.ctex"]
+source_file="res://assets/art/symbols/Thombus.png"
+dest_files=["res://.godot/imported/Thombus.png-5c63ed8e0d919e9832a99a611aa42a7f.ctex"]
 
 [params]
 

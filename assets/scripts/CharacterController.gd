@@ -9,8 +9,8 @@ var actual_velocity = Vector2.ZERO
 
 func _process(_delta):
 	if (global.paused):
+		$AnimationTree.get("parameters/playback").travel("Idle")
 		return
-	
 	if direction == Vector2.ZERO or actual_velocity.length() == 0:
 		$AnimationTree.get("parameters/playback").travel("Idle")
 	else:

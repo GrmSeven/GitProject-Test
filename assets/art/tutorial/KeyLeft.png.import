@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck777scxda25h"
-path="res://.godot/imported/Romb.png-7361925d691e7f25687d0b82865e04e0.ctex"
+uid="uid://c5f27kbl1cghg"
+path="res://.godot/imported/KeyLeft.png-9743784b4ff11222361a112783feef1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Romb.png"
-dest_files=["res://.godot/imported/Romb.png-7361925d691e7f25687d0b82865e04e0.ctex"]
+source_file="res://assets/art/tutorial/KeyLeft.png"
+dest_files=["res://.godot/imported/KeyLeft.png-9743784b4ff11222361a112783feef1b.ctex"]
 
 [params]
 

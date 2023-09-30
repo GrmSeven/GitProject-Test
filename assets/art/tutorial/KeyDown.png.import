@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfqfvxaolu7id"
-path="res://.godot/imported/E.png-ab7515660589a6b5473524fe53c198f9.ctex"
+uid="uid://bmps4mmkyl116"
+path="res://.godot/imported/KeyDown.png-12c70458ae188f135ef5d30c1807e4ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/E.png"
-dest_files=["res://.godot/imported/E.png-ab7515660589a6b5473524fe53c198f9.ctex"]
+source_file="res://assets/art/tutorial/KeyDown.png"
+dest_files=["res://.godot/imported/KeyDown.png-12c70458ae188f135ef5d30c1807e4ee.ctex"]
 
 [params]
 
