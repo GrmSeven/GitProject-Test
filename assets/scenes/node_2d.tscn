@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dxw660ykjdih6"]
 
-[ext_resource type="PackedScene" uid="uid://ohxatc4nd5bs" path="res://character_body_2d.tscn" id="1_hmqoy"]
-[ext_resource type="Script" path="res://ColorController.gd" id="2_3u6a6"]
+[ext_resource type="PackedScene" uid="uid://ohxatc4nd5bs" path="res://assets/scenes/character_body_2d.tscn" id="1_hmqoy"]
+[ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="2_3u6a6"]
 
 [node name="Node2D" type="Node2D"]
 
