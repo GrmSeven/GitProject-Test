@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://deu6jviaygkaa"]
+[gd_scene load_steps=11 format=3 uid="uid://b0mj7vo8tnon1"]
 
 [ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_oii5i"]
-[ext_resource type="Texture2D" uid="uid://c2bwwdy2htwre" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_Floor_Tilemap_002_.png" id="2_ybjye"]
-[ext_resource type="PackedScene" uid="uid://dhwia3qfcxupl" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
+[ext_resource type="Texture2D" uid="uid://bdesd2u1xladl" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_001_.png" id="2_h36fi"]
+[ext_resource type="Texture2D" uid="uid://ey8khwlgid7h" path="res://assets/art/tiles/tilemap-example.png" id="2_iprio"]
+[ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
 [ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="4_mvvgl"]
 [ext_resource type="Texture2D" uid="uid://ckmvgkjvvdviy" path="res://assets/art/tiles/123Ssadgasghafhaprite-0001.png" id="6_frdhy"]
+[ext_resource type="PackedScene" uid="uid://bebthciqy2fup" path="res://assets/scenes/Lever.tscn" id="7_t4p3g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ie2y8"]
 texture = ExtResource("2_ybjye")
@@ -335,6 +337,11 @@ sources/1 = SubResource("TileSetAtlasSource_ie2y8")
 [node name="Node2D" type="Node2D"]
 texture_filter = 1
 
+[node name="Interactables" type="Node2D" parent="."]
+
+[node name="Lever" parent="Interactables" instance=ExtResource("7_t4p3g")]
+position = Vector2(102, 138)
+
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 script = ExtResource("1_oii5i")
 
@@ -346,10 +353,12 @@ layer_0/tile_data = PackedInt32Array(458758, 131073, 1, 393222, 196609, 3, 32768
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_cuasp")]
 position = Vector2(-5, 69)
+collision_layer = 3
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_mvvgl")
 autoplay = true
+bus = &"SFX"
 
 [node name="123Ssadgasghafhaprite-0001" type="Sprite2D" parent="."]
 position = Vector2(-92, 20)

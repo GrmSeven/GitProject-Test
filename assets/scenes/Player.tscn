@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=29 format=3 uid="uid://dhwia3qfcxupl"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://jn3vu50gs0i2"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://assets/scripts/CharacterController.gd" id="1_botjh"]
 [ext_resource type="Texture2D" uid="uid://qa1axt1dck7d" path="res://assets/art/player/PlayerSpritesheet.png" id="2_50j5i"]
@@ -251,15 +255,24 @@ script = ExtResource("1_botjh")
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
 
+<<<<<<< Updated upstream
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
+=======
+[node name="CollisionArea" type="CollisionShape2D" parent="."]
+>>>>>>> Stashed changes
 position = Vector2(0, 13)
 shape = SubResource("RectangleShape2D_ttjrm")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="InteractionArea" type="Area2D" parent="."]
+collision_mask = 3
 
+<<<<<<< Updated upstream
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 visible = false
+=======
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+>>>>>>> Stashed changes
 position = Vector2(0, 13)
 shape = SubResource("RectangleShape2D_vj3qy")
 
