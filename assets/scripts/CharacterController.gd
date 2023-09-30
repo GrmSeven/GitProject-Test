@@ -4,7 +4,7 @@ const accel: int = 30
 const max_speed: int = 150
 const sprint_mult: float = 1.5
 
-func _process(_delta):
+func _process(delta):
 	var sprint = Input.is_key_pressed(KEY_SHIFT)
 	var direction = Input.get_vector("ui_left","ui_right","ui_up","ui_down")
 	if direction:
