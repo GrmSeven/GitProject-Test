@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://b0mj7vo8tnon1"]
+[gd_scene load_steps=12 format=3 uid="uid://b0mj7vo8tnon1"]
 
 [ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_oii5i"]
+[ext_resource type="PackedScene" path="res://assets/scenes/Pause.tscn" id="1_th0ne"]
 [ext_resource type="Texture2D" uid="uid://ctufx2idqg5o3" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_Wall_Tilemap_001_.png" id="2_jy7sd"]
 [ext_resource type="Texture2D" uid="uid://c2bwwdy2htwre" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_Floor_Tilemap_002_.png" id="2_ybjye"]
 [ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
@@ -756,3 +757,5 @@ texture = ExtResource("6_frdhy")
 
 [node name="Lever" parent="." instance=ExtResource("8_qq3qh")]
 position = Vector2(300, 177)
+
+[node name="Pause" parent="." instance=ExtResource("1_th0ne")]
