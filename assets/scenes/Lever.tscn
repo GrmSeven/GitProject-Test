@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=3 format=3 uid="uid://bx1nwjom4ayiq"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://wohclm3cahm7"]
+>>>>>>> main
 
 [ext_resource type="Script" path="res://assets/scripts/Lever.gd" id="1_1odtl"]
 
