@@ -4,12 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://qa1axt1dck7d" path="res://assets/art/player/PlayerSpritesheet.png" id="2_50j5i"]
 [ext_resource type="Shader" path="res://assets/shaders/Vignette.gdshader" id="2_fmwci"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ttjrm"]
-size = Vector2(16, 7)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vj3qy"]
-size = Vector2(30, 30)
-
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_h4fc3"]
 animation = &"idle_left"
 
@@ -249,6 +243,12 @@ shader = ExtResource("2_fmwci")
 shader_parameter/player_position = null
 shader_parameter/color = Vector4(0.305, 0.298, 0.341, 1)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ttjrm"]
+size = Vector2(16, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vj3qy"]
+size = Vector2(30, 30)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 texture_filter = 1
 motion_mode = 1
@@ -256,18 +256,6 @@ script = ExtResource("1_botjh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0, 13)
-shape = SubResource("RectangleShape2D_ttjrm")
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-visible = false
-position = Vector2(0, 13)
-shape = SubResource("RectangleShape2D_vj3qy")
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_1ey0r")
@@ -293,3 +281,14 @@ offset_bottom = 1.0
 scale = Vector2(500, 500)
 pivot_offset = Vector2(0.5, 0.5)
 color = Color(0, 0, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 13)
+shape = SubResource("RectangleShape2D_ttjrm")
+
+[node name="Area2D" type="Area2D" parent="." groups=["PlayerInteraction"]]
+collision_layer = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 13)
+shape = SubResource("RectangleShape2D_vj3qy")
