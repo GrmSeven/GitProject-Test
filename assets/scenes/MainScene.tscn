@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=11 format=3 uid="uid://b0mj7vo8tnon1"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://deu6jviaygkaa"]
+>>>>>>> parent of ea684dd (animation)
 =======
 [gd_scene load_steps=10 format=3 uid="uid://deu6jviaygkaa"]
 >>>>>>> parent of ea684dd (animation)
@@ -8,8 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://bdesd2u1xladl" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_001_.png" id="2_h36fi"]
 [ext_resource type="Texture2D" uid="uid://ey8khwlgid7h" path="res://assets/art/tiles/tilemap-example.png" id="2_iprio"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
 =======
+=======
+>>>>>>> parent of ea684dd (animation)
 [ext_resource type="PackedScene" uid="uid://dhwia3qfcxupl" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
 >>>>>>> parent of ea684dd (animation)
 [ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="4_mvvgl"]

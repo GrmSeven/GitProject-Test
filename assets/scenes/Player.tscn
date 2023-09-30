@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 [gd_scene load_steps=29 format=3 uid="uid://dhwia3qfcxupl"]
 =======
 [gd_scene load_steps=10 format=3 uid="uid://jn3vu50gs0i2"]
 >>>>>>> Stashed changes
+=======
+[gd_scene load_steps=10 format=3 uid="uid://dhwia3qfcxupl"]
+>>>>>>> parent of ea684dd (animation)
 =======
 [gd_scene load_steps=10 format=3 uid="uid://dhwia3qfcxupl"]
 >>>>>>> parent of ea684dd (animation)
@@ -69,10 +73,13 @@ position_smoothing_enabled = true
 <<<<<<< Updated upstream
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 <<<<<<< HEAD
+<<<<<<< HEAD
 visible = false
 =======
 [node name="CollisionArea" type="CollisionShape2D" parent="."]
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of ea684dd (animation)
 =======
 >>>>>>> parent of ea684dd (animation)
 position = Vector2(0, 13)
@@ -84,10 +91,13 @@ collision_mask = 3
 <<<<<<< Updated upstream
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 visible = false
 =======
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of ea684dd (animation)
 =======
 >>>>>>> parent of ea684dd (animation)
 position = Vector2(0, 13)
