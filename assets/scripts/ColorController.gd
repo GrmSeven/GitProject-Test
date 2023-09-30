@@ -1,13 +1,14 @@
 extends CanvasModulate
-var mode = 0
-var colors = [Vector3(1, 0, 0), Vector3(0, 1, 0), Vector3(0, 0, 1)]
-var speed = 10
-var current = colors[mode]
+var speed = 0.2
+var colors = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+var tween_active = false
 
-func _ready():
-	color = Color(current[0], current[1], current[2], 1)
-
-func _process(delta):
-	mode = 0 if Input.is_key_label_pressed(KEY_1) else (1 if Input.is_key_label_pressed(KEY_2) else (2 if Input.is_key_label_pressed(KEY_3) else mode))
-	current = current.move_toward(colors[mode], speed * delta)
-	color = Color(current[0], current[1], current[2], 1)
+func _process(_delta):
+	var shift_input = Input.get_axis("shift_color_up", "shift_color_down")
+	if shift_input and !tween_active:
+		tween_active = true
+		var tween = create_tween()
+		global.color_mode = fmod((global.color_mode + shift_input), 3)
+		tween.tween_property(self, "color", Color.BLACK, speed)
+		tween.tween_property(self, "color", Color(colors[global.color_mode][0], colors[global.color_mode][1], colors[global.color_mode][2], 1), speed)
+		tween.tween_property(self, "tween_active", false, 0)
