@@ -1,19 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://d2yousmm7nex"]
+[gd_scene load_steps=5 format=3 uid="uid://cfskt4adw80cl"]
 
-[ext_resource type="Script" path="res://assets/scripts/TitleScreen.gd" id="1_eqbhh"]
-[ext_resource type="Script" path="res://assets/scripts/VolumeSFX.gd" id="2_7kqhq"]
-[ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="2_sx2f4"]
-[ext_resource type="Script" path="res://assets/scripts/VolumeMusic.gd" id="3_g5d8j"]
+[ext_resource type="Script" path="res://assets/scripts/TitleScreen.gd" id="1_ihhpx"]
+[ext_resource type="Script" path="res://assets/scripts/VolumeSFX.gd" id="2_tp2uj"]
+[ext_resource type="Script" path="res://assets/scripts/VolumeMusic.gd" id="3_ghqqk"]
+[ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="4_jamwq"]
 
-[node name="TitleScreen" type="Control"]
-visible = false
+[node name="Pause" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_eqbhh")
+script = ExtResource("1_ihhpx")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -37,7 +36,7 @@ theme_override_constants/separation = 12
 layout_mode = 2
 theme_override_constants/h_separation = 1
 theme_override_font_sizes/font_size = 16
-text = "Resume"
+text = "Play"
 
 [node name="PlaySound" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -50,7 +49,7 @@ layout_mode = 2
 max_value = 1.0
 step = 0.0
 value = 1.0
-script = ExtResource("2_7kqhq")
+script = ExtResource("2_tp2uj")
 
 [node name="Music Volume" type="HSlider" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -58,13 +57,13 @@ size_flags_vertical = 1
 max_value = 1.0
 step = 0.0
 value = 1.0
-script = ExtResource("3_g5d8j")
+script = ExtResource("3_ghqqk")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_sx2f4")
+stream = ExtResource("4_jamwq")
 bus = &"SFX"
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="resume"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/PlaySound" to="." method="_on_play_sound_pressed"]
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/SFX Volume" to="." method="_on_sfx_volume_value_changed"]
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/Music Volume" to="." method="_on_music_volume_value_changed"]

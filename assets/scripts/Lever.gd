@@ -21,4 +21,3 @@ func can_interact():
 
 func cannot_interact():
 	pass
-	

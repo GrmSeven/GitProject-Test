@@ -1,7 +1,19 @@
 extends Control
 
-func _on_play_pressed():
-	get_tree().change_scene_to_file("res://assets/scenes/MainScene.tscn")
+func _process(delta):
+	if (Input.is_action_just_pressed("pause")):
+		if (global.paused):
+			resume()
+		else:
+			pause()
+
+func pause():
+	global.paused = true
+	show()
+
+func resume():
+	global.paused = false
+	hide()
 
 func _on_sfx_volume_value_changed(value: float):
 	Options.on_sfx_volume_changed(value)
