@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://dfaav5ydorplx"]
+[gd_scene load_steps=6 format=3 uid="uid://dfaav5ydorplx"]
 
 [ext_resource type="Script" path="res://assets/scripts/Lever.gd" id="1_1odtl"]
 [ext_resource type="Script" path="res://assets/scripts/LeverData.gd" id="1_6e3vy"]
-[ext_resource type="Texture2D" uid="uid://cgrem2x0gt6kb" path="res://magicc.png" id="1_irmiw"]
+[ext_resource type="Texture2D" uid="uid://e0idar1oklhx" path="res://assets/art/sprites/Other/LeverLeft.png" id="3_sehdt"]
+[ext_resource type="Texture2D" uid="uid://dtgnrv75ipxdd" path="res://assets/art/sprites/Other/LeverRight.png" id="4_m6ung"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_koqn3"]
-size = Vector2(82.1813, 37.5649)
+size = Vector2(62.5293, 38.9065)
 
 [node name="Lever" type="Node2D"]
 script = ExtResource("1_6e3vy")
@@ -15,11 +16,14 @@ scale = Vector2(0.559738, 0.745377)
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_1odtl")
+disabled_sprite = ExtResource("3_sehdt")
+enabled_sprite = ExtResource("4_m6ung")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lever"]
-position = Vector2(-2.11091e-06, 2.86102e-06)
+position = Vector2(0.893274, -4.69561)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_koqn3")
 
 [node name="Sprite" type="Sprite2D" parent="Lever"]
-scale = Vector2(0.035731, 0.0268321)
-texture = ExtResource("1_irmiw")
+scale = Vector2(2, 1.5)
+texture = ExtResource("3_sehdt")
