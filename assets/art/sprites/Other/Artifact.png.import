@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtgnrv75ipxdd"
-path="res://.godot/imported/LeverRight.png-84c15174b8bf2143de1f8a66dcf59d65.ctex"
+uid="uid://dhd8qjfmiber2"
+path="res://.godot/imported/Artifact.png-0d6ecb16074201a31934837f6a3a1848.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/LeverRight.png"
-dest_files=["res://.godot/imported/LeverRight.png-84c15174b8bf2143de1f8a66dcf59d65.ctex"]
+source_file="res://assets/art/sprites/Other/Artifact.png"
+dest_files=["res://.godot/imported/Artifact.png-0d6ecb16074201a31934837f6a3a1848.ctex"]
 
 [params]
 
