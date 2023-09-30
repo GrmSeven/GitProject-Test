@@ -1,9 +1,14 @@
-[gd_scene load_steps=32 format=3 uid="uid://jn3vu50gs0i2"]
+[gd_scene load_steps=30 format=3 uid="uid://jn3vu50gs0i2"]
 
 [ext_resource type="Script" path="res://assets/scripts/CharacterController.gd" id="1_botjh"]
 [ext_resource type="Texture2D" uid="uid://qa1axt1dck7d" path="res://assets/art/player/PlayerSpritesheet.png" id="2_50j5i"]
 [ext_resource type="Shader" path="res://assets/shaders/Vignette.gdshader" id="2_fmwci"]
-[ext_resource type="Script" path="res://assets/scripts/PlayerInteractions.gd" id="4_2ane1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ttjrm"]
+size = Vector2(16, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vj3qy"]
+size = Vector2(30, 30)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_h4fc3"]
 animation = &"idle_left"
@@ -51,9 +56,6 @@ blend_point_3/node = SubResource("AnimationNodeAnimation_yaby4")
 blend_point_3/pos = Vector2(0, 1)
 blend_mode = 1
 
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_y0as5"]
-advance_mode = 2
-
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_peltn"]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xfyhx"]
@@ -61,11 +63,11 @@ advance_mode = 2
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_1ey0r"]
 states/End/position = Vector2(1131, 138)
 states/Idle/node = SubResource("AnimationNodeBlendSpace2D_bh05c")
-states/Idle/position = Vector2(578, 68)
+states/Idle/position = Vector2(571, 133)
 states/Start/position = Vector2(318, 138)
 states/Walk/node = SubResource("AnimationNodeBlendSpace2D_rtbcy")
 states/Walk/position = Vector2(828, 126)
-transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_y0as5"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_peltn"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_xfyhx")]
+transitions = ["Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_peltn"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_xfyhx")]
 
 [sub_resource type="Animation" id="Animation_8woga"]
 length = 0.001
@@ -84,9 +86,9 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_ya341"]
 resource_name = "idle_down"
-length = 0.1
+length = 1.6
 loop_mode = 1
-step = 0.0
+step = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -94,17 +96,17 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [12]
+"values": [22, 23]
 }
 
 [sub_resource type="Animation" id="Animation_hs4yj"]
 resource_name = "idle_left"
-length = 0.1
+length = 1.6
 loop_mode = 1
-step = 0.0
+step = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -112,17 +114,17 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [4]
+"values": [18, 19]
 }
 
 [sub_resource type="Animation" id="Animation_ppy3b"]
 resource_name = "idle_right"
-length = 0.1
+length = 1.6
 loop_mode = 1
-step = 0.0
+step = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -130,17 +132,17 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [0]
+"values": [16, 17]
 }
 
 [sub_resource type="Animation" id="Animation_rf5ut"]
 resource_name = "idle_up"
-length = 0.1
+length = 1.6
 loop_mode = 1
-step = 0.0
+step = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -148,10 +150,10 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [8]
+"values": [20, 21]
 }
 
 [sub_resource type="Animation" id="Animation_3fjcn"]
@@ -244,12 +246,6 @@ shader = ExtResource("2_fmwci")
 shader_parameter/player_position = null
 shader_parameter/color = Vector4(0.305, 0.298, 0.341, 1)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ttjrm"]
-size = Vector2(16, 7)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vj3qy"]
-size = Vector2(30, 30)
-
 [node name="CharacterBody2D" type="CharacterBody2D"]
 texture_filter = 1
 motion_mode = 1
@@ -258,16 +254,29 @@ script = ExtResource("1_botjh")
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 13)
+shape = SubResource("RectangleShape2D_ttjrm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 13)
+shape = SubResource("RectangleShape2D_vj3qy")
+
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_1ey0r")
 anim_player = NodePath("../AnimationPlayer")
 active = true
-parameters/Idle/blend_position = Vector2(-0.0126582, 1.27074)
-parameters/Walk/blend_position = Vector2(-0.0022338, 1.19214)
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/Walk/blend_position = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 16)
 texture = ExtResource("2_50j5i")
-hframes = 16
+offset = Vector2(0, -16)
+hframes = 8
+vframes = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -282,18 +291,3 @@ offset_bottom = 1.0
 scale = Vector2(500, 500)
 pivot_offset = Vector2(0.5, 0.5)
 color = Color(0, 0, 0, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 13)
-shape = SubResource("RectangleShape2D_ttjrm")
-
-[node name="Area2D" type="Area2D" parent="." groups=["PlayerInteraction"]]
-collision_layer = 3
-script = ExtResource("4_2ane1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 13)
-shape = SubResource("RectangleShape2D_vj3qy")
-
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_enter"]
-[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exit"]
