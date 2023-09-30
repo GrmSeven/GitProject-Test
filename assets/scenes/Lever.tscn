@@ -1,7 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://fnohqiveh5fv"]
 
 [ext_resource type="Script" path="res://assets/scripts/Lever.gd" id="1_1odtl"]
-[ext_resource type="Texture2D" uid="uid://ci5ufqerl6i2g" path="res://assets/art/lever_sprite.png" id="1_gkjxw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jlqdm"]
 
@@ -16,4 +15,3 @@ script = ExtResource("1_1odtl")
 shape = SubResource("RectangleShape2D_jlqdm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_gkjxw")
