@@ -1,12 +1,12 @@
 [gd_scene load_steps=7 format=3 uid="uid://deu6jviaygkaa"]
 
-[ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_u6dmx"]
-[ext_resource type="Texture2D" uid="uid://ey8khwlgid7h" path="res://assets/art/tiles/tilemap-example.png" id="2_y8exo"]
-[ext_resource type="PackedScene" uid="uid://dhwia3qfcxupl" path="res://assets/scenes/Player.tscn" id="4_dqro6"]
-[ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="5_cv0hw"]
+[ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_oii5i"]
+[ext_resource type="Texture2D" uid="uid://ey8khwlgid7h" path="res://assets/art/tiles/tilemap-example.png" id="2_iprio"]
+[ext_resource type="PackedScene" uid="uid://dhwia3qfcxupl" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
+[ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="4_mvvgl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h5e5f"]
-texture = ExtResource("2_y8exo")
+texture = ExtResource("2_iprio")
 texture_region_size = Vector2i(18, 18)
 0:0/0 = 0
 0:0/0/terrain_set = 0
@@ -96,7 +96,7 @@ sources/2 = SubResource("TileSetAtlasSource_h5e5f")
 texture_filter = 1
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-script = ExtResource("1_u6dmx")
+script = ExtResource("1_oii5i")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-8, -3)
@@ -104,10 +104,10 @@ tile_set = SubResource("TileSet_7mori")
 format = 2
 layer_0/tile_data = PackedInt32Array(65535, 2, 1, 0, 65538, 1, 131071, 2, 1, 65536, 65538, 1, 65537, 65538, 1, 1, 65538, 1, -65535, 65538, 1, -65536, 262146, 1, -1, 2, 0, 65538, 65538, 1, 2, 65538, 1, 65539, 65538, 1, 65540, 65538, 1, 4, 65538, 1, 3, 65538, 1, -65532, 65538, 1, -131068, 65538, 1, -196604, 65538, 0, -65533, 65538, 1, -131069, 65538, 1, -196605, 65538, 0, -196606, 65538, 0, -196607, 65538, 0, -196608, 2, 0, -131072, 2, 1, -131071, 65538, 1, -131070, 65538, 1, 65541, 65538, 1, 5, 65538, 1, -65531, 65538, 1, -131067, 65538, 1, -196603, 65538, 0, -196602, 65538, 0, -196601, 131074, 0, -131065, 131074, 1, -65529, 196610, 1, 7, 65538, 1, 65543, 65538, 1, 6, 65538, 1, -65530, 65538, 1, -131066, 65538, 1, 65542, 65538, 1, 131073, 65538, 1, 196609, 65538, 1, 262145, 65538, 1, 327681, 65538, 2, 262146, 65538, 1, 196610, 65538, 1, 131074, 65538, 1, 327682, 65538, 2, 327685, 65538, 2, 262149, 65538, 1, 196613, 65538, 1, 131077, 65538, 1, 327686, 65538, 2, 262150, 65538, 1, 196614, 65538, 1, 131078, 65538, 1, 327693, 131074, 2, 262157, 131074, 1, 196621, 131074, 1, 131085, 131074, 1, 65549, 131074, 1, 13, 131074, 1, -65523, 131074, 0, 327692, 65538, 2, 262156, 65538, 1, 196620, 65538, 1, 131084, 65538, 1, 65548, 65538, 1, 12, 65538, 1, -65524, 65538, 0, 327691, 65538, 2, 262155, 65538, 1, 196619, 65538, 1, 131083, 65538, 1, 65547, 65538, 1, 11, 65538, 1, -65525, 65538, 0, 327690, 65538, 2, 262154, 65538, 1, 196618, 65538, 1, 131082, 65538, 1, 65546, 65538, 1, 10, 65538, 1, -65526, 65538, 0, 327689, 65538, 2, 262153, 65538, 1, 196617, 65538, 1, 131081, 65538, 1, 65545, 65538, 1, 9, 65538, 1, -65527, 65538, 0, 327688, 65538, 2, 262152, 65538, 1, 196616, 65538, 1, 131080, 65538, 1, 65544, 65538, 1, 8, 65538, 1, -65528, 65538, 0, 327687, 65538, 2, 262151, 65538, 1, 196615, 65538, 1, 131079, 65538, 1, 327684, 65538, 2, 262148, 65538, 1, 196612, 65538, 1, 131076, 65538, 1, 327683, 65538, 2, 262147, 65538, 1, 196611, 65538, 1, 131075, 65538, 1, 327680, 65538, 2, 262144, 65538, 1, 196608, 65538, 1, 131072, 65538, 1, 393215, 2, 2, 327679, 2, 1, 262143, 2, 1, 196607, 2, 1, -65534, 65538, 1)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_dqro6")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_cuasp")]
 position = Vector2(-5, 69)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_cv0hw")
+stream = ExtResource("4_mvvgl")
 volume_db = -15.0
 autoplay = true
