@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://deu6jviaygkaa"]
+[gd_scene load_steps=9 format=3 uid="uid://dxw660ykjdih6"]
 
 [ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_l0ac3"]
 [ext_resource type="Texture2D" uid="uid://dhy4oaaob0ghg" path="res://assets/art/Tiles/tile_test.png" id="2_plxgh"]
 [ext_resource type="PackedScene" uid="uid://dhwia3qfcxupl" path="res://assets/scenes/Player.tscn" id="3_8uq0r"]
 [ext_resource type="Texture2D" uid="uid://8h8b6ihkt3g" path="res://assets/art/Tiles/nigtile.png" id="3_t1olp"]
+[ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="5_7ot6o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hk5nb"]
 texture = ExtResource("2_plxgh")
@@ -34,3 +35,9 @@ layer_0/tile_data = PackedInt32Array(-2, 0, 0, -65536, 0, 0, 65535, 0, 0, 0, 0, 
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_8uq0r")]
 position = Vector2(-5, 69)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_7ot6o")
+volume_db = -15.0
+autoplay = true
+bus = &"SFX"
