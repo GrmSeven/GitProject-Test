@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b0mj7vo8tnon1"]
+[gd_scene load_steps=10 format=3 uid="uid://b0mj7vo8tnon1"]
 
 [ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_oii5i"]
 [ext_resource type="Texture2D" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_Floor_Tilemap_002_.png" id="2_ybjye"]
@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="4_mvvgl"]
 [ext_resource type="Texture2D" uid="uid://ckmvgkjvvdviy" path="res://assets/art/tiles/123Ssadgasghafhaprite-0001.png" id="6_frdhy"]
 [ext_resource type="Texture2D" uid="uid://cgrem2x0gt6kb" path="res://magicc.png" id="6_imnty"]
+[ext_resource type="Texture2D" uid="uid://ckv7r5s4x8shd" path="res://assets/very_important/do_not_touch/catD.png" id="7_gu3av"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ie2y8"]
 texture = ExtResource("2_ybjye")
@@ -362,3 +363,8 @@ texture = ExtResource("6_frdhy")
 position = Vector2(-6.00001, 66)
 scale = Vector2(0.118737, 0.109285)
 texture = ExtResource("6_imnty")
+
+[node name="CatD" type="Sprite2D" parent="."]
+position = Vector2(-214, 65)
+scale = Vector2(0.314363, 0.314363)
+texture = ExtResource("7_gu3av")
