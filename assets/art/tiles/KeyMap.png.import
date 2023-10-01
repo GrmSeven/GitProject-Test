@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://twdwhbtr8irk"
-path="res://.godot/imported/Cell 6.png-0dddf304f3dfc04e975604ebf35d4981.ctex"
+uid="uid://b33yvfc8wmx6f"
+path="res://.godot/imported/KeyMap.png-8ddc32c717a2fbf807c3c97e8d1cea28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Bat/Cell 6.png"
-dest_files=["res://.godot/imported/Cell 6.png-0dddf304f3dfc04e975604ebf35d4981.ctex"]
+source_file="res://assets/art/tiles/KeyMap.png"
+dest_files=["res://.godot/imported/KeyMap.png-8ddc32c717a2fbf807c3c97e8d1cea28.ctex"]
 
 [params]
 

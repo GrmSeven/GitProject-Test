@@ -249,6 +249,7 @@ shader_parameter/player_position = null
 shader_parameter/color = Vector4(0.305, 0.298, 0.341, 1)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+y_sort_enabled = true
 texture_filter = 1
 motion_mode = 1
 script = ExtResource("1_botjh")
@@ -277,6 +278,7 @@ parameters/Idle/blend_position = Vector2(0, 0)
 parameters/Walk/blend_position = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+y_sort_enabled = true
 position = Vector2(0, 16)
 texture = ExtResource("2_50j5i")
 offset = Vector2(0, -16)
