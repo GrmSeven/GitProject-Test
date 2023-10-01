@@ -2,13 +2,13 @@
 
 [ext_resource type="Script" path="res://assets/scripts/TitleScreen.gd" id="1_eqbhh"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeSFX.gd" id="2_7kqhq"]
-[ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="2_sx2f4"]
 [ext_resource type="Texture2D" uid="uid://b7o6ifhyd7tiq" path="res://assets/art/menu/Button1.png" id="2_ubsne"]
 [ext_resource type="FontFile" uid="uid://upg2ejhxg4n6" path="res://assets/fonts/ka1.ttf" id="3_4k34r"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeMusic.gd" id="3_g5d8j"]
 [ext_resource type="Texture2D" uid="uid://dlpql8bun7mv3" path="res://assets/art/menu/Grabber.png" id="4_y138g"]
 [ext_resource type="Texture2D" uid="uid://du61fr0j44p0d" path="res://assets/art/menu/SFXSlider.png" id="5_2ywhr"]
 [ext_resource type="Texture2D" uid="uid://lwtflj8dk652" path="res://assets/art/menu/VolumeSlider.png" id="7_onu4l"]
+[ext_resource type="AudioStream" uid="uid://wltulaiah1w2" path="res://assets/sound/Music/TitleMusic.mp3" id="9_fwekq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_etc81"]
 
@@ -125,9 +125,10 @@ z_index = -2
 position = Vector2(51, 9)
 texture = ExtResource("7_onu4l")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_sx2f4")
-bus = &"SFX"
+[node name="TitleMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_fwekq")
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/TextureButton/Button" to="." method="_on_play_pressed"]
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/SFX Volume" to="." method="_on_sfx_volume_value_changed"]
