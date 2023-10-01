@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtgnrv75ipxdd"
-path="res://.godot/imported/LeverRight.png-4fe94c065ff0980214396f78edeb56e6.ctex"
+path="res://.godot/imported/LeverRight.png-65cfdd0c61ffa948f6c2da86fc8f8759.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Other/LeverRight.png"
-dest_files=["res://.godot/imported/LeverRight.png-4fe94c065ff0980214396f78edeb56e6.ctex"]
+source_file="res://assets/art/sprites/other/LeverRight.png"
+dest_files=["res://.godot/imported/LeverRight.png-65cfdd0c61ffa948f6c2da86fc8f8759.ctex"]
 
 [params]
 
