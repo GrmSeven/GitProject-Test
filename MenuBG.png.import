@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmubie4c3pq23"
-path="res://.godot/imported/SquareButton.png-6c2d2766ae6fc80b439929921c83fdc2.ctex"
+uid="uid://3einmsk8xt6p"
+path="res://.godot/imported/MenuBG.png-33f511e33f1809e0b7e5cb92e0e655fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Panel/SquareButton.png"
-dest_files=["res://.godot/imported/SquareButton.png-6c2d2766ae6fc80b439929921c83fdc2.ctex"]
+source_file="res://MenuBG.png"
+dest_files=["res://.godot/imported/MenuBG.png-33f511e33f1809e0b7e5cb92e0e655fa.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2dx78jwqkraj"
-path="res://.godot/imported/DeleteButton.png-28731b6023803321119aae83ac825135.ctex"
+path="res://.godot/imported/DeleteButton.png-847f912de3867a3368882ff6b6a39677.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/panel/DeleteButton.png"
-dest_files=["res://.godot/imported/DeleteButton.png-28731b6023803321119aae83ac825135.ctex"]
+source_file="res://assets/art/sprites/Panel/DeleteButton.png"
+dest_files=["res://.godot/imported/DeleteButton.png-847f912de3867a3368882ff6b6a39677.ctex"]
 
 [params]
 
