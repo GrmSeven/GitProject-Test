@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://6ccpkk53f1ms"]
+[gd_scene load_steps=3 format=3 uid="uid://6ccpkk53f1ms"]
 
 [ext_resource type="Texture2D" uid="uid://4lsion7pyfqx" path="res://assets/art/EndScreen.png" id="1_63stm"]
+[ext_resource type="Script" path="res://assets/scripts/EndScreen.gd" id="2_68ri4"]
 
 [node name="EndScreen" type="Node2D"]
 
@@ -8,3 +9,4 @@
 position = Vector2(145, 81)
 scale = Vector2(0.161667, 0.161667)
 texture = ExtResource("1_63stm")
+script = ExtResource("2_68ri4")
