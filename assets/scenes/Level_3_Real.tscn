@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://n8xx3dhn27sf"]
+
+[ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_ivvrh"]
+[ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="2_6h5jb"]
+[ext_resource type="PackedScene" uid="uid://cfskt4adw80cl" path="res://assets/scenes/Pause.tscn" id="3_yabco"]
+[ext_resource type="PackedScene" uid="uid://b7pcw1pe5jjqf" path="res://assets/scenes/Door.tscn" id="5_iuc6h"]
+
+[node name="Node2D2" type="Node2D"]
+y_sort_enabled = true
+texture_filter = 1
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+script = ExtResource("1_ivvrh")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_6h5jb")]
+z_index = 9
+
+[node name="Pause" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_yabco")]
+z_index = 30
+player = NodePath("../CharacterBody2D")
+
+[node name="Door" parent="." instance=ExtResource("5_iuc6h")]
+z_index = 9
+position = Vector2(-173, -266)
+open = true
+scene_name = "Level2"

@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://cduxxyrbed7ic"]
+
+[ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_7bckg"]
+[ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="2_7pkpl"]
+[ext_resource type="PackedScene" uid="uid://cfskt4adw80cl" path="res://assets/scenes/Pause.tscn" id="3_1g1e5"]
+[ext_resource type="PackedScene" uid="uid://b7pcw1pe5jjqf" path="res://assets/scenes/Door.tscn" id="5_1ym1b"]
+[ext_resource type="PackedScene" uid="uid://dfaav5ydorplx" path="res://assets/scenes/Lever.tscn" id="6_f7cod"]
+[ext_resource type="PackedScene" uid="uid://2p8crecjfo6x" path="res://assets/scenes/Level3Tiles.tscn" id="6_loah8"]
+
+[node name="Node2D2" type="Node2D"]
+y_sort_enabled = true
+texture_filter = 1
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+script = ExtResource("1_7bckg")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_7pkpl")]
+z_index = 9
+position = Vector2(-46, 106)
+
+[node name="Pause" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_1g1e5")]
+visible = false
+z_index = 30
+player = NodePath("../CharacterBody2D")
+
+[node name="Door" parent="." instance=ExtResource("5_1ym1b")]
+z_index = 9
+position = Vector2(0, -67)
+scene_name = "EndScreen"
+
+[node name="Lever" parent="." node_paths=PackedStringArray("door") instance=ExtResource("6_f7cod")]
+position = Vector2(729, 111)
+door = NodePath("../Door")
+lever_color = Color(0, 1, 0, 1)
+
+[node name="TileMap" parent="." instance=ExtResource("6_loah8")]
