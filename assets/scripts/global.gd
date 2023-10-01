@@ -6,4 +6,4 @@ var paused: bool = false
 
 var color_controller: CanvasModulate
 
-var movement_on = false
+var movement_on = true
