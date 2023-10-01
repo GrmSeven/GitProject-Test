@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const accel: int = 30
 const max_speed: int = 150
-var direction
+var direction = Vector2.ZERO
 var facing
 var prev_pos = Vector2.ZERO
 var actual_velocity = Vector2.ZERO
@@ -12,7 +12,7 @@ func _process(_delta):
 	if (global.paused):
 		$AnimationTree.get("parameters/playback").travel("Idle")
 		return
-	if actual_velocity.length() == 0:
+	if actual_velocity.length() == 0 or (direction.length() == 0 if global.movement_on else false):
 		$AnimationTree.get("parameters/playback").travel("Idle")
 	else:
 		$AnimationTree.get("parameters/playback").travel("Walk")
