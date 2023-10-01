@@ -249,6 +249,7 @@ shader_parameter/player_position = null
 shader_parameter/color = Vector4(0.305, 0.298, 0.341, 1)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 6
 y_sort_enabled = true
 texture_filter = 1
 motion_mode = 1

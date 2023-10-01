@@ -10,4 +10,5 @@ func _process(delta):
 	modulate.g = lever_color.g * global.color_controller.color.g
 	modulate.b = lever_color.b * global.color_controller.color.b
 	
-	
+	if (modulate.r == 0 && modulate.g == 0 && modulate.b == 0):
+		modulate.a = 0

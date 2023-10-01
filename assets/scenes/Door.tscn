@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bdqq6a5fcldy" path="res://assets/art/sprites/objects/Door.png" id="3_3is8k"]
 
 [node name="Door" type="Node2D" node_paths=PackedStringArray("sprite")]
+z_index = 5
 script = ExtResource("1_hjeft")
 sprite = NodePath("Door")
 
