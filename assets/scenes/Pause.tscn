@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cfskt4adw80cl"]
 
-[ext_resource type="Script" path="res://assets/scripts/TitleScreen.gd" id="1_ihhpx"]
+[ext_resource type="Script" path="res://assets/scripts/Pause.gd" id="1_ptmth"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeSFX.gd" id="2_tp2uj"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeMusic.gd" id="3_ghqqk"]
 [ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="4_jamwq"]
@@ -12,7 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ihhpx")
+script = ExtResource("1_ptmth")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1

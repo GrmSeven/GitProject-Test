@@ -2,25 +2,8 @@ extends Control
 
 @export var player: Node2D
 
-func _process(delta):
-	if (Input.is_action_just_pressed("pause")):
-		if (global.paused):
-			resume()
-		else:
-			pause()
-			
-func _ready():
-	if (!global.paused):
-		resume()
-
-func pause():
-	position = player.position
-	global.paused = true
-	show()
-
-func resume():
-	global.paused = false
-	hide()
+func _on_play_pressed():
+	get_tree().change_scene_to_file("res://assets/scenes/MainScene.tscn")
 
 func _on_sfx_volume_value_changed(value: float):
 	Options.on_sfx_volume_changed(value)

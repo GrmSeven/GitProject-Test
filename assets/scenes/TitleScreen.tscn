@@ -35,11 +35,11 @@ grow_vertical = 2
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/h_separation = 1
 theme_override_font_sizes/font_size = 16
-text = "Resume"
+text = "Play"
 icon_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer"]
@@ -80,7 +80,7 @@ script = ExtResource("3_g5d8j")
 stream = ExtResource("2_sx2f4")
 bus = &"SFX"
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="resume"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/PlaySound" to="." method="_on_play_sound_pressed"]
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/SFX Volume" to="." method="_on_sfx_volume_value_changed"]
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/Music Volume" to="." method="_on_music_volume_value_changed"]
