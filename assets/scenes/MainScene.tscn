@@ -30,4 +30,3 @@ lever_color = Color(1, 0, 1, 1)
 
 [node name="Door" parent="Interactables" instance=ExtResource("5_s8w0h")]
 position = Vector2(-16, -76)
-scene_name = "TitleScreen"
