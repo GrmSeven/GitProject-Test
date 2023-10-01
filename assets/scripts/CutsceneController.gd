@@ -28,7 +28,7 @@ func do_the_thing():
 		i.visible = false
 	tween.kill()
 	tween2 = create_tween()
-	tween2.tween_property($"CanvasModulate", "color", Color(0.2, 0.2, 0.2, 1), 0)
+	tween2.tween_property($"CanvasModulate", "color", Color(0.4, 0.4, 0.4, 1), 0)
 	tween2.tween_property($ColorRect2, "modulate", Color(1, 1, 1, 0), 2).set_ease(Tween.EASE_OUT_IN)
 	tween2.tween_property(self, "done", true, 0)
 	tween2.connect("finished", on_tween2_finished)	
