@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dmqopy2rb24im" path="res://assets/art/screens/5.png" id="8_7my45"]
 [ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="10_h5rvh"]
 
-[node name="TileMap" type="TileMap"]
+[node name="TileMap2" type="TileMap"]
 y_sort_enabled = true
 texture_filter = 1
 position = Vector2(0, -2)
