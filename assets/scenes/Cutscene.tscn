@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ih46rw0cc5t8"]
+[gd_scene load_steps=12 format=3 uid="uid://ih46rw0cc5t8"]
 
 [ext_resource type="TileSet" uid="uid://ghvpft7l0xkc" path="res://assets/art/tiles/tilesets/new_tile_set.tres" id="1_2xf5x"]
 [ext_resource type="Texture2D" uid="uid://dhd8qjfmiber2" path="res://assets/art/sprites/objects/Artifact.png" id="2_hqxcd"]
@@ -10,8 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://caajdg4xlcqc8" path="res://assets/art/screens/4.png" id="7_ln7xn"]
 [ext_resource type="Texture2D" uid="uid://dmqopy2rb24im" path="res://assets/art/screens/5.png" id="8_7my45"]
 [ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="10_h5rvh"]
+[ext_resource type="AudioStream" uid="uid://bddc7uc6ddy5p" path="res://assets/sound/Music/CutsceneMusic.mp3" id="11_4m2km"]
 
-[node name="TileMap" type="TileMap"]
+[node name="TileMap2" type="TileMap"]
 y_sort_enabled = true
 texture_filter = 1
 position = Vector2(0, -2)
@@ -87,3 +88,8 @@ color = Color(0, 0, 0, 1)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 script = ExtResource("10_h5rvh")
+
+[node name="CutsceneMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_4m2km")
+autoplay = true
+bus = &"Music"
