@@ -3,8 +3,12 @@
 [ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_oii5i"]
 [ext_resource type="PackedScene" uid="uid://cfskt4adw80cl" path="res://assets/scenes/Pause.tscn" id="1_th0ne"]
 [ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://brehudew2p6h3" path="res://assets/scenes/Door.tscn" id="5_s8w0h"]
 [ext_resource type="PackedScene" uid="uid://cwhgpsitwq0jm" path="res://assets/scenes/Level_1.tscn" id="6_7vd7v"]
+=======
+[ext_resource type="PackedScene" uid="uid://b7pcw1pe5jjqf" path="res://assets/scenes/Door.tscn" id="5_s8w0h"]
+>>>>>>> 7d2a934b1dc930685fcbe376fecfca52f6e7017f
 [ext_resource type="PackedScene" uid="uid://dfaav5ydorplx" path="res://assets/scenes/Lever.tscn" id="6_au18p"]
 
 [node name="Node2D" type="Node2D"]
