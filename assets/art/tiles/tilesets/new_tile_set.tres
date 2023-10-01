@@ -1,10 +1,13 @@
-[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://ghvpft7l0xkc"]
+[gd_resource type="TileSet" load_steps=12 format=3 uid="uid://ghvpft7l0xkc"]
 
 [ext_resource type="Texture2D" uid="uid://ctufx2idqg5o3" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_Wall_Tilemap_001_.png" id="1_4btqn"]
 [ext_resource type="Texture2D" uid="uid://c2bwwdy2htwre" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_Floor_Tilemap_002_.png" id="2_rdh74"]
 [ext_resource type="Texture2D" uid="uid://b33yvfc8wmx6f" path="res://assets/art/tiles/KeyMap.png" id="3_uymov"]
 [ext_resource type="Texture2D" uid="uid://k6wruutg5ue7" path="res://assets/art/tiles/Sand.png" id="4_8moqc"]
 [ext_resource type="Texture2D" uid="uid://bu0tjg8gv4vqy" path="res://assets/art/sprites/objects/DoorFrame.png" id="5_hjwas"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_axpnx"]
+tile_data = PackedInt32Array(131072, 131073, 3, 65537, 65537, 1, 2, 131073, 2, 65538, 131073, 1, 131074, 196609, 1, 196610, 196609, 2, 262146, 131073, 1, 327682, 196609, 1, 65539, 196609, 2, 131076, 65537, 2)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6x4d"]
 texture = ExtResource("1_4btqn")
@@ -888,3 +891,4 @@ sources/0 = SubResource("TileSetAtlasSource_h6x4d")
 sources/2 = SubResource("TileSetAtlasSource_eeld1")
 sources/3 = SubResource("TileSetAtlasSource_gl1b6")
 sources/4 = SubResource("TileSetAtlasSource_8ieih")
+pattern_0 = SubResource("TileMapPattern_axpnx")
