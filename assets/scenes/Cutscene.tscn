@@ -1,13 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://ih46rw0cc5t8"]
+[gd_scene load_steps=10 format=3 uid="uid://ih46rw0cc5t8"]
 
-[ext_resource type="TileSet" uid="uid://ghvpft7l0xkc" path="res://assets/art/tiles/tilesets/new_tile_set.tres" id="1_75h80"]
-[ext_resource type="Texture2D" uid="uid://dhd8qjfmiber2" path="res://assets/art/sprites/objects/Artifact.png" id="2_q1mxg"]
+[ext_resource type="TileSet" uid="uid://ghvpft7l0xkc" path="res://assets/art/tiles/tilesets/new_tile_set.tres" id="1_2xf5x"]
+[ext_resource type="Texture2D" uid="uid://dhd8qjfmiber2" path="res://assets/art/sprites/objects/Artifact.png" id="2_hqxcd"]
+[ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_lvc6k"]
+[ext_resource type="Script" path="res://assets/scripts/CutsceneController.gd" id="4_mmlvo"]
+[ext_resource type="Texture2D" uid="uid://yo44kp5f3k1r" path="res://assets/art/screens/1.png" id="4_rqfe3"]
+[ext_resource type="Texture2D" uid="uid://4o12gilyggdi" path="res://assets/art/screens/2.png" id="5_6le3c"]
+[ext_resource type="Texture2D" uid="uid://3lyju4e5uxdb" path="res://assets/art/screens/3.png" id="6_o51bd"]
+[ext_resource type="Texture2D" uid="uid://caajdg4xlcqc8" path="res://assets/art/screens/4.png" id="7_ln7xn"]
+[ext_resource type="Texture2D" uid="uid://dmqopy2rb24im" path="res://assets/art/screens/5.png" id="8_7my45"]
 
 [node name="TileMap" type="TileMap"]
 y_sort_enabled = true
 texture_filter = 1
 position = Vector2(0, -2)
-tile_set = ExtResource("1_75h80")
+tile_set = ExtResource("1_2xf5x")
 cell_quadrant_size = 18
 format = 2
 layer_0/name = "Walls"
@@ -34,8 +41,45 @@ layer_3/y_sort_enabled = false
 layer_3/y_sort_origin = 0
 layer_3/z_index = -3
 layer_3/tile_data = PackedInt32Array(65539, 131075, 0, 3, 131075, 0, -65533, 131075, 0, -131069, 131075, 0, -196605, 131075, 0, -262141, 131075, 0, -327677, 3, 131072, 65538, 65539, 65536, 2, 65539, 131072, -65534, 65539, 0, -131070, 65539, 65536, -196606, 65539, 65536, -262142, 65539, 0, -327678, 131075, 196608, 65537, 65539, 131072, 1, 65539, 0, -65535, 65539, 0, -131071, 65539, 65536, -196607, 65539, 131072, -262143, 65539, 131072, -327679, 131075, 196608, 65536, 65539, 131072, 0, 65539, 0, -65536, 65539, 196608, -131072, 65539, 0, -196608, 65539, 0, -262144, 65539, 65536, -327680, 131075, 196608, 131071, 65539, 65536, 65535, 65539, 131072, -1, 65539, 65536, -65537, 65539, 0, -131073, 65539, 131072, -196609, 65539, 65536, -262145, 131075, 196608, 131070, 65539, 196608, 65534, 65539, 65536, -2, 65539, 0, -65538, 65539, 0, -131074, 65539, 196608, -196610, 65539, 0, -262146, 131075, 196608, 131069, 65539, 131072, 65533, 65539, 65536, -3, 65539, 0, -65539, 65539, 131072, -131075, 65539, 196608, -196611, 65539, 196608, -262147, 131075, 196608, 131068, 131075, 65536, 65532, 131075, 65536, -4, 131075, 65536, -65540, 131075, 65536, -131076, 131075, 65536, -196612, 131075, 65536, -262148, 3, 0, 131075, 3, 65536, 131074, 131075, 131072, 131073, 131075, 131072, 131072, 131075, 131072, 196607, 131075, 131072, 196606, 131075, 131072, 196605, 131075, 131072, 196604, 3, 196608, -1441791, 262144, 1, -1507327, 262144, 1, -1572863, 262144, 1, -1638399, 262144, 0, -1441792, 131072, 1, -1507328, 131072, 1, -1572864, 196608, 1, -1638400, 196608, 0, -1376257, 196608, 1, -1441793, 65536, 1, -1507329, 65536, 1, -1572865, 196608, 0, -1376258, 0, 1, -1441794, 0, 1, -1507330, 0, 1, -1572866, 327680, 1, -1376255, 262144, 2, -1376256, 65536, 2, -1310721, 65536, 2, -1310722, 0, 2)
+script = ExtResource("4_mmlvo")
 metadata/_edit_group_ = true
 
 [node name="Artifact" type="Sprite2D" parent="."]
 position = Vector2(-6, -313)
-texture = ExtResource("2_q1mxg")
+texture = ExtResource("2_hqxcd")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_lvc6k")]
+
+[node name="1" type="Sprite2D" parent="."]
+z_index = 25
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_rqfe3")
+
+[node name="2" type="Sprite2D" parent="."]
+z_index = 25
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_6le3c")
+
+[node name="3" type="Sprite2D" parent="."]
+z_index = 25
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("6_o51bd")
+
+[node name="4" type="Sprite2D" parent="."]
+z_index = 25
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("7_ln7xn")
+
+[node name="5" type="Sprite2D" parent="."]
+z_index = 25
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("8_7my45")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+z_index = 24
+offset_left = -249.0
+offset_top = -250.0
+offset_right = -209.0
+offset_bottom = -210.0
+scale = Vector2(12.8765, 12.4223)
+color = Color(0, 0, 0, 1)
