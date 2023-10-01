@@ -1,17 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://b7pcw1pe5jjqf"]
+[gd_scene load_steps=6 format=3 uid="uid://b7pcw1pe5jjqf"]
 
 [ext_resource type="Script" path="res://assets/scripts/Door.gd" id="1_hjeft"]
 [ext_resource type="Texture2D" uid="uid://bu0tjg8gv4vqy" path="res://assets/art/sprites/objects/DoorFrame.png" id="2_ctflh"]
 [ext_resource type="Texture2D" uid="uid://bdqq6a5fcldy" path="res://assets/art/sprites/objects/Door.png" id="3_3is8k"]
+[ext_resource type="FontFile" uid="uid://upg2ejhxg4n6" path="res://assets/fonts/ka1.ttf" id="4_nsxad"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fig3i"]
 size = Vector2(33, 28)
 
-[node name="Area2D" type="Area2D" node_paths=PackedStringArray("sprite")]
+[node name="Area2D" type="Area2D" node_paths=PackedStringArray("sprite", "text")]
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_hjeft")
 sprite = NodePath("Door")
+text = NodePath("RichTextLabel")
+open = null
+scene_name = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 20)
@@ -22,3 +26,12 @@ texture = ExtResource("2_ctflh")
 
 [node name="Door" type="Sprite2D" parent="."]
 texture = ExtResource("3_3is8k")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -64.0
+offset_top = -39.0
+offset_right = 74.0
+offset_bottom = -23.0
+theme_override_fonts/normal_font = ExtResource("4_nsxad")
+theme_override_font_sizes/normal_font_size = 10
+text = "Press  E  to  enter"

@@ -1,10 +1,19 @@
 extends Node2D
 
 @export var sprite: Sprite2D
+@export var text: RichTextLabel
 
 @export var open: bool = false
+var can_interact: bool = false
 
 @export var scene_name: String
+
+
+func _process(delta):
+	if (can_interact && door_open()):
+		text.modulate.a = 1
+	else:
+		text.modulate.a = 0
 
 func on_player_interact():
 	if (!open):
@@ -26,9 +35,8 @@ func door_close():
 	sprite.modulate = Color(1,1, 1, 1)
 
 func can_interact():
-	print("a")
-	pass
+	can_interact = true
 	
 func cannot_interact():
-	pass
+	can_interact = false
 	
