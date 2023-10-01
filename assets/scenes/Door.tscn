@@ -14,8 +14,6 @@ collision_mask = 3
 script = ExtResource("1_hjeft")
 sprite = NodePath("Door")
 text = NodePath("RichTextLabel")
-open = null
-scene_name = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 20)

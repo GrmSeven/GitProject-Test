@@ -4,7 +4,7 @@ extends Node2D
 @export var text: RichTextLabel
 
 @export var open: bool = false
-var can_interact: bool = false
+var caninteract: bool = false
 
 @export var scene_name: String
 
@@ -35,8 +35,8 @@ func door_close():
 	sprite.modulate = Color(1,1, 1, 1)
 
 func can_interact():
-	can_interact = true
+	caninteract = true
 	
 func cannot_interact():
-	can_interact = false
+	caninteract = false
 	
