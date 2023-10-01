@@ -38,6 +38,7 @@ func do_the_thing():
 func on_tween2_finished():
 	tween3 = create_tween()
 	tween3.tween_property($CharacterBody2D, "position", Vector2(0, -300), 4).set_ease(Tween.EASE_IN)
+	tween3.tween_interval(1)
 	tween3.tween_property($Artifact, "visible", false, 1)
 	tween3.tween_property($"CanvasModulate", "color", Color.BLACK, 2)
 	tween3.tween_property($"CanvasModulate", "color", Color.RED, 2)
