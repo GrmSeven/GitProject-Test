@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cfskt4adw80cl" path="res://assets/scenes/Pause.tscn" id="1_th0ne"]
 [ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
 [ext_resource type="PackedScene" uid="uid://ih46rw0cc5t8" path="res://assets/scenes/Cutscene.tscn" id="4_xlkwf"]
-[ext_resource type="PackedScene" uid="uid://brehudew2p6h3" path="res://assets/scenes/Door.tscn" id="5_s8w0h"]
+[ext_resource type="PackedScene" uid="uid://b7pcw1pe5jjqf" path="res://assets/scenes/Door.tscn" id="5_s8w0h"]
 [ext_resource type="PackedScene" uid="uid://dfaav5ydorplx" path="res://assets/scenes/Lever.tscn" id="6_au18p"]
 
 [node name="Node2D" type="Node2D"]
@@ -30,3 +30,4 @@ lever_color = Color(1, 0, 1, 1)
 
 [node name="Door" parent="Interactables" instance=ExtResource("5_s8w0h")]
 position = Vector2(-16, -76)
+scene_name = "TitleScreen"
