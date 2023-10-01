@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e0idar1oklhx"
-path="res://.godot/imported/LeverLeft.png-6ee66bb5c433b1cb2faea334e13fee2f.ctex"
+uid="uid://5rxvvoqjaqjc"
+path="res://.godot/imported/2.png-815fbb69371508462133a752eb6a476d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/other/LeverLeft.png"
-dest_files=["res://.godot/imported/LeverLeft.png-6ee66bb5c433b1cb2faea334e13fee2f.ctex"]
+source_file="res://assets/art/screens/2.png"
+dest_files=["res://.godot/imported/2.png-815fbb69371508462133a752eb6a476d.ctex"]
 
 [params]
 

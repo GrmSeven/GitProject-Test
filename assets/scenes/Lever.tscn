@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://assets/scripts/Lever.gd" id="1_1odtl"]
 [ext_resource type="Script" path="res://assets/scripts/LeverData.gd" id="1_6e3vy"]
-[ext_resource type="Texture2D" uid="uid://e0idar1oklhx" path="res://assets/art/sprites/Other/LeverLeft.png" id="3_sehdt"]
-[ext_resource type="Texture2D" uid="uid://dtgnrv75ipxdd" path="res://assets/art/sprites/Other/LeverRight.png" id="4_m6ung"]
+[ext_resource type="Texture2D" uid="uid://e0idar1oklhx" path="res://assets/art/sprites/objects/LeverLeft.png" id="3_sehdt"]
+[ext_resource type="Texture2D" uid="uid://dtgnrv75ipxdd" path="res://assets/art/sprites/objects/LeverRight.png" id="4_m6ung"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_koqn3"]
 size = Vector2(62.5293, 38.9065)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bu0tjg8gv4vqy"
-path="res://.godot/imported/DoorFrame.png-a21b88a5568ab5fd6b3e66f7580516e2.ctex"
+uid="uid://e0idar1oklhx"
+path="res://.godot/imported/LeverLeft.png-2fae35f81d2f5beda70c7d133823c9b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/other/DoorFrame.png"
-dest_files=["res://.godot/imported/DoorFrame.png-a21b88a5568ab5fd6b3e66f7580516e2.ctex"]
+source_file="res://assets/art/sprites/objects/LeverLeft.png"
+dest_files=["res://.godot/imported/LeverLeft.png-2fae35f81d2f5beda70c7d133823c9b1.ctex"]
 
 [params]
 

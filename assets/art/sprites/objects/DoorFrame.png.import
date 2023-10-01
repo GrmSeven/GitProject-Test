@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://borxf5ognltbf"
-path="res://.godot/imported/BatSheet.png-5191364293b87c726e44aa5a3c7c057a.ctex"
+uid="uid://bu0tjg8gv4vqy"
+path="res://.godot/imported/DoorFrame.png-1e7fbcf5e78fd3e125658669ea801bdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/other/BatSheet.png"
-dest_files=["res://.godot/imported/BatSheet.png-5191364293b87c726e44aa5a3c7c057a.ctex"]
+source_file="res://assets/art/sprites/objects/DoorFrame.png"
+dest_files=["res://.godot/imported/DoorFrame.png-1e7fbcf5e78fd3e125658669ea801bdc.ctex"]
 
 [params]
 
