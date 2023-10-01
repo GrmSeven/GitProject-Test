@@ -10,7 +10,7 @@ var caninteract: bool = false
 
 
 func _process(delta):
-	if (can_interact && door_open()):
+	if (caninteract && open):
 		text.modulate.a = 1
 	else:
 		text.modulate.a = 0
@@ -18,7 +18,6 @@ func _process(delta):
 func on_player_interact():
 	if (!open):
 		return
-	
 
 	if (scene_name == null):
 		return

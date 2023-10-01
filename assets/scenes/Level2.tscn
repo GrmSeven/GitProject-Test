@@ -15,9 +15,11 @@ texture_filter = 1
 script = ExtResource("1_pwl6q")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_0po7o")]
+z_index = 9
 
 [node name="Pause" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_id57p")]
 visible = false
+z_index = 30
 player = NodePath("../CharacterBody2D")
 
 [node name="TileMap2" parent="." instance=ExtResource("4_u8sp0")]
@@ -27,7 +29,7 @@ position = Vector2(-87, -141)
 z_index = 9
 position = Vector2(-24, -97)
 open = false
-scene_name = ""
+scene_name = "EndScreen"
 
 [node name="Lever" parent="." node_paths=PackedStringArray("door") instance=ExtResource("6_35in4")]
 position = Vector2(156, -5)
