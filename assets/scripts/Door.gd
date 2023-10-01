@@ -8,6 +8,11 @@ var caninteract: bool = false
 
 @export var scene_name: String
 
+func _ready():
+	if open:
+		door_open()
+	else:
+		door_close()
 
 func _process(delta):
 	if (caninteract && open):

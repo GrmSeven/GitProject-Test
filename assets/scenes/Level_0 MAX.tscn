@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://340kfa6ybgbs"]
+[gd_scene load_steps=4 format=3 uid="uid://340kfa6ybgbs"]
 
 [ext_resource type="TileSet" uid="uid://ghvpft7l0xkc" path="res://assets/art/tiles/tilesets/new_tile_set.tres" id="1_5qr6l"]
 [ext_resource type="AudioStream" uid="uid://bcobphkuq2jns" path="res://assets/sound/Music/GameMusic.mp3" id="2_hcd66"]
+[ext_resource type="FontFile" uid="uid://upg2ejhxg4n6" path="res://assets/fonts/ka1.ttf" id="3_8vou0"]
 
 [node name="TileMap" type="TileMap"]
 y_sort_enabled = true
@@ -11,7 +12,7 @@ tile_set = ExtResource("1_5qr6l")
 cell_quadrant_size = 18
 format = 2
 layer_0/name = "Tutorial_Sprites"
-layer_0/tile_data = PackedInt32Array(-22, 196610, 0)
+layer_0/tile_data = PackedInt32Array(-131072, 2, 1, -65540, 196610, 1, 65536, 196610, 0)
 layer_1/name = "Walls"
 layer_1/enabled = true
 layer_1/modulate = Color(1, 1, 1, 1)
@@ -46,3 +47,21 @@ metadata/_edit_group_ = true
 stream = ExtResource("2_hcd66")
 autoplay = true
 bus = &"Music"
+
+[node name="Space" type="RichTextLabel" parent="."]
+offset_left = -130.0
+offset_top = 19.0
+offset_right = -25.0
+offset_bottom = 33.0
+theme_override_fonts/normal_font = ExtResource("3_8vou0")
+theme_override_font_sizes/normal_font_size = 10
+text = "Change  color"
+
+[node name="Move" type="RichTextLabel" parent="."]
+offset_left = -46.0
+offset_top = -61.0
+offset_right = -2.0
+offset_bottom = -47.0
+theme_override_fonts/normal_font = ExtResource("3_8vou0")
+theme_override_font_sizes/normal_font_size = 10
+text = "Move"
