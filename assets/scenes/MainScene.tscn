@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cfskt4adw80cl" path="res://assets/scenes/Pause.tscn" id="1_th0ne"]
 [ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
 [ext_resource type="Shader" path="res://assets/shaders/BetterColors.gdshader" id="5_huys0"]
-[ext_resource type="PackedScene" uid="uid://cs7oda8l16nkd" path="res://assets/scenes/Level_1.tscn" id="6_7vd7v"]
+[ext_resource type="PackedScene" uid="uid://eeejv5iqk628" path="res://assets/scenes/Level_1.tscn" id="6_7vd7v"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kmggf"]
 shader = ExtResource("5_huys0")
