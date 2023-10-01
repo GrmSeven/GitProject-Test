@@ -1,14 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://ih46rw0cc5t8"]
+[gd_scene load_steps=11 format=3 uid="uid://ih46rw0cc5t8"]
 
 [ext_resource type="TileSet" uid="uid://ghvpft7l0xkc" path="res://assets/art/tiles/tilesets/new_tile_set.tres" id="1_2xf5x"]
 [ext_resource type="Texture2D" uid="uid://dhd8qjfmiber2" path="res://assets/art/sprites/objects/Artifact.png" id="2_hqxcd"]
 [ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_lvc6k"]
 [ext_resource type="Script" path="res://assets/scripts/CutsceneController.gd" id="4_mmlvo"]
-[ext_resource type="Texture2D" uid="uid://dqs5756qrdhet" path="res://assets/art/screens/1.png" id="4_rqfe3"]
-[ext_resource type="Texture2D" uid="uid://5rxvvoqjaqjc" path="res://assets/art/screens/2.png" id="5_6le3c"]
-[ext_resource type="Texture2D" uid="uid://8ta4738h480y" path="res://assets/art/screens/3.png" id="6_o51bd"]
+[ext_resource type="Texture2D" uid="uid://yo44kp5f3k1r" path="res://assets/art/screens/1.png" id="4_rqfe3"]
+[ext_resource type="Texture2D" uid="uid://4o12gilyggdi" path="res://assets/art/screens/2.png" id="5_6le3c"]
+[ext_resource type="Texture2D" uid="uid://3lyju4e5uxdb" path="res://assets/art/screens/3.png" id="6_o51bd"]
 [ext_resource type="Texture2D" uid="uid://caajdg4xlcqc8" path="res://assets/art/screens/4.png" id="7_ln7xn"]
 [ext_resource type="Texture2D" uid="uid://dmqopy2rb24im" path="res://assets/art/screens/5.png" id="8_7my45"]
+[ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="10_h5rvh"]
 
 [node name="TileMap" type="TileMap"]
 y_sort_enabled = true
@@ -83,3 +84,6 @@ offset_right = -209.0
 offset_bottom = -210.0
 scale = Vector2(12.8765, 12.4223)
 color = Color(0, 0, 0, 1)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+script = ExtResource("10_h5rvh")
