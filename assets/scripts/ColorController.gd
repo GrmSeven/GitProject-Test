@@ -4,7 +4,7 @@ var colors = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 var tween_active = false
 
 func _ready():
-	color = Color(1, 1, 1, 1)
+	color = Color(colors[global.color_mode][0], colors[global.color_mode][1], colors[global.color_mode][2], 1)
 	global.color_controller = self
 
 func _process(_delta):

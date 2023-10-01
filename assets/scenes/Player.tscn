@@ -1,14 +1,9 @@
-[gd_scene load_steps=34 format=3 uid="uid://jn3vu50gs0i2"]
+[gd_scene load_steps=31 format=3 uid="uid://jn3vu50gs0i2"]
 
 [ext_resource type="Script" path="res://assets/scripts/CharacterController.gd" id="1_botjh"]
 [ext_resource type="Texture2D" uid="uid://qa1axt1dck7d" path="res://assets/art/player/PlayerSpritesheet.png" id="2_50j5i"]
 [ext_resource type="Shader" path="res://assets/shaders/Vignette.gdshader" id="2_fmwci"]
-[ext_resource type="Shader" path="res://assets/shaders/ColorShader.gdshader" id="2_xf2hi"]
-[ext_resource type="Script" path="res://assets/scenes/ColorRect.gd" id="3_ixssn"]
 [ext_resource type="Script" path="res://assets/scripts/PlayerInteractions.gd" id="4_2ane1"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_jast1"]
-shader = ExtResource("2_xf2hi")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ttjrm"]
 size = Vector2(16, 7)
@@ -262,19 +257,6 @@ script = ExtResource("1_botjh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
-
-[node name="ColorRect" type="ColorRect" parent="Camera2D/CanvasLayer"]
-top_level = true
-light_mask = 0
-material = SubResource("ShaderMaterial_jast1")
-offset_left = -32667.0
-offset_top = -21612.0
-offset_right = 31402.0
-offset_bottom = 19896.0
-script = ExtResource("3_ixssn")
-metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 13)
