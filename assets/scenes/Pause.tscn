@@ -1,11 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfskt4adw80cl"]
+[gd_scene load_steps=12 format=3 uid="uid://cfskt4adw80cl"]
 
 [ext_resource type="Script" path="res://assets/scripts/Pause.gd" id="1_ptmth"]
+[ext_resource type="Texture2D" uid="uid://b7o6ifhyd7tiq" path="res://assets/art/menu/Button1.png" id="2_p4ihg"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeSFX.gd" id="2_tp2uj"]
+[ext_resource type="FontFile" uid="uid://upg2ejhxg4n6" path="res://assets/fonts/ka1.ttf" id="3_5ubnh"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeMusic.gd" id="3_ghqqk"]
+[ext_resource type="Texture2D" uid="uid://dlpql8bun7mv3" path="res://assets/art/menu/Grabber.png" id="4_dy4gi"]
 [ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="4_jamwq"]
+[ext_resource type="Texture2D" uid="uid://du61fr0j44p0d" path="res://assets/art/menu/SFXSlider.png" id="6_y4gfv"]
+[ext_resource type="Texture2D" uid="uid://lwtflj8dk652" path="res://assets/art/menu/VolumeSlider.png" id="8_mqscb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lnxyc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c067c"]
 
 [node name="Pause" type="Control"]
+z_index = 20
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -16,54 +26,106 @@ script = ExtResource("1_ptmth")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -109.0
-offset_top = -65.0
-offset_right = 106.0
-offset_bottom = 65.0
+offset_left = -55.0
+offset_top = -46.0
+offset_right = 48.0
+offset_bottom = 46.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 12
+theme_override_constants/separation = 15
 
-[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
-theme_override_constants/h_separation = 1
-theme_override_font_sizes/font_size = 16
-text = "Play"
+texture_normal = ExtResource("2_p4ihg")
 
-[node name="PlaySound" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/h_separation = 1
-theme_override_font_sizes/font_size = 16
-text = "PlaySounbd"
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/TextureButton"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 5.0
+offset_right = 107.0
+offset_bottom = 19.0
+theme_override_fonts/normal_font = ExtResource("3_5ubnh")
+theme_override_font_sizes/normal_font_size = 10
+text = "Resume"
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/TextureButton"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 102.0
+offset_bottom = 22.0
 
 [node name="SFX Volume" type="HSlider" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
+theme_override_icons/grabber = ExtResource("4_dy4gi")
+theme_override_icons/grabber_highlight = ExtResource("4_dy4gi")
+theme_override_icons/grabber_disabled = ExtResource("4_dy4gi")
+theme_override_icons/tick = ExtResource("4_dy4gi")
+theme_override_styles/slider = SubResource("StyleBoxEmpty_lnxyc")
 max_value = 1.0
 step = 0.0
 value = 1.0
 script = ExtResource("2_tp2uj")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/SFX Volume"]
+z_index = -1
+layout_mode = 0
+offset_left = 11.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 6.0
+theme_override_fonts/normal_font = ExtResource("3_5ubnh")
+theme_override_font_sizes/normal_font_size = 10
+text = "SFX Volume"
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/SFX Volume"]
+z_index = -2
+position = Vector2(51, 10)
+texture = ExtResource("6_y4gfv")
+
 [node name="Music Volume" type="HSlider" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 1
+theme_override_icons/grabber = ExtResource("4_dy4gi")
+theme_override_icons/grabber_highlight = ExtResource("4_dy4gi")
+theme_override_icons/grabber_disabled = ExtResource("4_dy4gi")
+theme_override_icons/tick = ExtResource("4_dy4gi")
+theme_override_styles/slider = SubResource("StyleBoxEmpty_c067c")
 max_value = 1.0
 step = 0.0
 value = 1.0
 script = ExtResource("3_ghqqk")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/Music Volume"]
+z_index = -1
+layout_mode = 0
+offset_left = 4.0
+offset_top = -7.0
+offset_right = 99.0
+offset_bottom = 6.0
+theme_override_fonts/normal_font = ExtResource("3_5ubnh")
+theme_override_font_sizes/normal_font_size = 10
+text = "music volume"
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/Music Volume"]
+z_index = -2
+position = Vector2(51, 9)
+texture = ExtResource("8_mqscb")
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_jamwq")
 bus = &"SFX"
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="resume"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/PlaySound" to="." method="_on_play_sound_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/TextureButton/Button" to="." method="resume"]
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/SFX Volume" to="." method="_on_sfx_volume_value_changed"]
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/Music Volume" to="." method="_on_music_volume_value_changed"]

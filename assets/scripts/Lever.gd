@@ -5,6 +5,8 @@ var AA: String = "UHH"
 @export var disabled_sprite: Texture2D
 @export var enabled_sprite: Texture2D
 
+@export var text: RichTextLabel
+
 var enabled: bool = false
 
 # Called when the node enters the scene tree for the first time.
@@ -16,6 +18,9 @@ func _process(delta):
 	pass
 
 func on_player_interact():
+	if (owner.modulate.a == 0):
+		return
+	
 	enabled = !enabled
 	get_child(1).set_texture(enabled_sprite if enabled else disabled_sprite)
 	
@@ -29,10 +34,10 @@ func on_player_interact():
 		door.door_close()
 	
 func can_interact():
-	pass
+	text.modulate.a = 1
 	
 func cannot_interact():
-	pass
+	text.modulate.a = 0
 
 func get_door():
 	if !("door" in owner):

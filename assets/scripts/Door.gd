@@ -2,10 +2,20 @@ extends Node2D
 
 @export var sprite: Sprite2D
 
-var open: bool = false
+@export var open: bool = false
+
+@export var scene_name: String
 
 func on_player_interact():
-	pass
+	if (!open):
+		return
+	
+
+	if (scene_name == null):
+		return
+		
+	var scene_path = "res://assets/scenes/" + scene_name + ".tscn"
+	get_tree().change_scene_to_file(scene_path)
 
 func door_open():
 	open = true
@@ -16,7 +26,9 @@ func door_close():
 	sprite.modulate = Color(1,1, 1, 1)
 
 func can_interact():
+	print("a")
 	pass
 	
 func cannot_interact():
 	pass
+	
