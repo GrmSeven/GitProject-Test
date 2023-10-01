@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cewv0rw5bukj8"
-path="res://.godot/imported/Reset 2.png-50111c15bef2951c48860929dd507e5a.ctex"
+path="res://.godot/imported/Reset 2.png-c2c6f2c059bd70e27c8e362b21deb543.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/panel/Reset 2.png"
-dest_files=["res://.godot/imported/Reset 2.png-50111c15bef2951c48860929dd507e5a.ctex"]
+source_file="res://assets/art/sprites/Panel/Reset 2.png"
+dest_files=["res://.godot/imported/Reset 2.png-c2c6f2c059bd70e27c8e362b21deb543.ctex"]
 
 [params]
 

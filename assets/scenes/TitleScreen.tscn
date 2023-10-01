@@ -1,10 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://d2yousmm7nex"]
+[gd_scene load_steps=14 format=3 uid="uid://d2yousmm7nex"]
 
 [ext_resource type="Script" path="res://assets/scripts/TitleScreen.gd" id="1_eqbhh"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeSFX.gd" id="2_7kqhq"]
+[ext_resource type="Texture2D" uid="uid://dqwtuaew5w8dx" path="res://assets/art/menu/TitleBackground.png" id="2_u460b"]
 [ext_resource type="Texture2D" uid="uid://b7o6ifhyd7tiq" path="res://assets/art/menu/Button1.png" id="2_ubsne"]
 [ext_resource type="FontFile" uid="uid://upg2ejhxg4n6" path="res://assets/fonts/ka1.ttf" id="3_4k34r"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeMusic.gd" id="3_g5d8j"]
+[ext_resource type="Texture2D" uid="uid://bm78gjli5k8r1" path="res://assets/art/menu/TitleText.png" id="3_xh03a"]
 [ext_resource type="Texture2D" uid="uid://dlpql8bun7mv3" path="res://assets/art/menu/Grabber.png" id="4_y138g"]
 [ext_resource type="Texture2D" uid="uid://du61fr0j44p0d" path="res://assets/art/menu/SFXSlider.png" id="5_2ywhr"]
 [ext_resource type="Texture2D" uid="uid://lwtflj8dk652" path="res://assets/art/menu/VolumeSlider.png" id="7_onu4l"]
@@ -19,27 +21,39 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 11.0
+offset_left = 1.0
 offset_top = -1.0
-offset_right = 11.0
+offset_right = 1.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_eqbhh")
 
+[node name="TitleBackground" type="Sprite2D" parent="."]
+modulate = Color(0.501961, 0.501961, 0.501961, 1)
+z_index = -13
+position = Vector2(144, 82)
+scale = Vector2(1.32787, 1.32787)
+texture = ExtResource("2_u460b")
+
+[node name="TitleText" type="Sprite2D" parent="."]
+position = Vector2(143, 67)
+scale = Vector2(0.116, 0.116)
+texture = ExtResource("3_xh03a")
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -55.0
-offset_top = -46.0
-offset_right = 48.0
-offset_bottom = 46.0
+anchor_bottom = 1.0
+offset_left = -51.5
+offset_top = -106.0
+offset_right = 51.5
+offset_bottom = -14.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
