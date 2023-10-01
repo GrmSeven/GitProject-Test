@@ -1,11 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://b0mj7vo8tnon1"]
+[gd_scene load_steps=5 format=3 uid="uid://b0mj7vo8tnon1"]
 
 [ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_oii5i"]
 [ext_resource type="PackedScene" uid="uid://cfskt4adw80cl" path="res://assets/scenes/Pause.tscn" id="1_th0ne"]
 [ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
-[ext_resource type="PackedScene" uid="uid://b7pcw1pe5jjqf" path="res://assets/scenes/Door.tscn" id="5_s8w0h"]
-[ext_resource type="PackedScene" uid="uid://eeejv5iqk628" path="res://assets/scenes/Level_1.tscn" id="6_7vd7v"]
-[ext_resource type="PackedScene" uid="uid://dfaav5ydorplx" path="res://assets/scenes/Lever.tscn" id="6_au18p"]
+[ext_resource type="PackedScene" uid="uid://cs7oda8l16nkd" path="res://assets/scenes/Level_1.tscn" id="6_7vd7v"]
 
 [node name="Node2D" type="Node2D"]
 y_sort_enabled = true
@@ -18,15 +16,5 @@ script = ExtResource("1_oii5i")
 
 [node name="Pause" parent="." node_paths=PackedStringArray("player") instance=ExtResource("1_th0ne")]
 player = NodePath("../CharacterBody2D")
-
-[node name="Interactables" type="Node" parent="."]
-
-[node name="Lever" parent="Interactables" node_paths=PackedStringArray("door") instance=ExtResource("6_au18p")]
-position = Vector2(-45, -316)
-door = NodePath("../Door")
-lever_color = Color(1, 0, 1, 1)
-
-[node name="Door" parent="Interactables" instance=ExtResource("5_s8w0h")]
-position = Vector2(-16, -76)
 
 [node name="TileMap" parent="." instance=ExtResource("6_7vd7v")]
