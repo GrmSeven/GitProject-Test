@@ -1,9 +1,10 @@
-[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://ghvpft7l0xkc"]
+[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://ghvpft7l0xkc"]
 
 [ext_resource type="Texture2D" uid="uid://ctufx2idqg5o3" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_Wall_Tilemap_001_.png" id="1_4btqn"]
 [ext_resource type="Texture2D" uid="uid://c2bwwdy2htwre" path="res://assets/art/tiles/Game_Jam_BG_Temple_Room_Floor_Tilemap_002_.png" id="2_rdh74"]
 [ext_resource type="Texture2D" uid="uid://b33yvfc8wmx6f" path="res://assets/art/tiles/KeyMap.png" id="3_uymov"]
 [ext_resource type="Texture2D" uid="uid://k6wruutg5ue7" path="res://assets/art/tiles/Sand.png" id="4_8moqc"]
+[ext_resource type="Texture2D" uid="uid://bu0tjg8gv4vqy" path="res://assets/art/sprites/objects/DoorFrame.png" id="5_hjwas"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6x4d"]
 texture = ExtResource("1_4btqn")
@@ -845,6 +846,46 @@ texture_region_size = Vector2i(18, 18)
 2:0/3/terrains_peering_bit/bottom_right_corner = 2
 2:0/3/terrains_peering_bit/bottom_left_corner = 2
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8ieih"]
+texture = ExtResource("5_hjwas")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/terrain_set = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/terrain_set = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+0:2/0 = 0
+0:2/0/terrain_set = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+
 [resource]
 tile_size = Vector2i(18, 18)
 physics_layer_0/collision_layer = 1
@@ -859,3 +900,4 @@ sources/1 = SubResource("TileSetAtlasSource_ie2y8")
 sources/0 = SubResource("TileSetAtlasSource_h6x4d")
 sources/2 = SubResource("TileSetAtlasSource_eeld1")
 sources/3 = SubResource("TileSetAtlasSource_gl1b6")
+sources/4 = SubResource("TileSetAtlasSource_8ieih")
