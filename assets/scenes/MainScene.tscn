@@ -9,7 +9,7 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ridy0"]
 shader = ExtResource("5_gxtj0")
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 y_sort_enabled = true
 texture_filter = 1
 
