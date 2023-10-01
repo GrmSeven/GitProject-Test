@@ -45,4 +45,8 @@ func on_tween2_finished():
 	tween3.tween_property($"CanvasModulate", "color", Color.BLACK, 2)
 	tween3.parallel()
 	tween3.tween_property($CharacterBody2D, "position", Vector2(0, -360), 2).set_ease(Tween.EASE_IN)
+	tween3.connect("finished", glob)	
+
+func glob():
+	global.movement_on = true
 	

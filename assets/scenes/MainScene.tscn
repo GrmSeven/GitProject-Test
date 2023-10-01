@@ -1,15 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://b0mj7vo8tnon1"]
+[gd_scene load_steps=5 format=3 uid="uid://b0mj7vo8tnon1"]
 
 [ext_resource type="Script" path="res://assets/scripts/ColorController.gd" id="1_oii5i"]
 [ext_resource type="PackedScene" uid="uid://cfskt4adw80cl" path="res://assets/scenes/Pause.tscn" id="1_th0ne"]
 [ext_resource type="PackedScene" uid="uid://jn3vu50gs0i2" path="res://assets/scenes/Player.tscn" id="3_cuasp"]
-[ext_resource type="Shader" path="res://assets/shaders/ColorShader.gdshader" id="5_gxtj0"]
 [ext_resource type="PackedScene" uid="uid://eeejv5iqk628" path="res://assets/scenes/Level_1.tscn" id="6_7vd7v"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ridy0"]
-shader = ExtResource("5_gxtj0")
-
-[node name="Node2D2" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 y_sort_enabled = true
 texture_filter = 1
 
@@ -22,14 +18,3 @@ script = ExtResource("1_oii5i")
 player = NodePath("../CharacterBody2D")
 
 [node name="TileMap" parent="." instance=ExtResource("6_7vd7v")]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-top_level = true
-light_mask = 0
-material = SubResource("ShaderMaterial_ridy0")
-offset_left = -32667.0
-offset_top = -21612.0
-offset_right = 31402.0
-offset_bottom = 19896.0
