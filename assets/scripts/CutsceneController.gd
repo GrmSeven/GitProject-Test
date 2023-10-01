@@ -31,7 +31,8 @@ func on_tween2_finished():
 	tween2 = create_tween()
 	tween2.tween_property($CharacterBody2D, "position", Vector2(0, -300), 4).set_ease(Tween.EASE_IN)
 	tween2.tween_property($Artifact, "visible", false, 1)
-	
+	tween2.tween_property($"/root/CanvasModulate", "color", Color.BLACK, 2)
+	tween2.tween_property(self, "color", Color(1, 0, 0, 1), 0.5)
 	
 
 	
