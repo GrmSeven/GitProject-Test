@@ -1,12 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://d2yousmm7nex"]
+[gd_scene load_steps=8 format=3 uid="uid://d2yousmm7nex"]
 
 [ext_resource type="Script" path="res://assets/scripts/TitleScreen.gd" id="1_eqbhh"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeSFX.gd" id="2_7kqhq"]
 [ext_resource type="AudioStream" uid="uid://cynjc7ojpgxic" path="res://assets/sound/SFX/TestSound.wav" id="2_sx2f4"]
+[ext_resource type="Texture2D" uid="uid://mpbtfu5jk46l" path="res://assets/art/menu/Button1.png" id="2_ubsne"]
+[ext_resource type="FontFile" uid="uid://upg2ejhxg4n6" path="res://assets/fonts/ka1.ttf" id="3_4k34r"]
+[ext_resource type="Theme" uid="uid://b7pga6q4sh71x" path="res://assets/themes/buttontext.tres" id="3_ete44"]
 [ext_resource type="Script" path="res://assets/scripts/VolumeMusic.gd" id="3_g5d8j"]
 
 [node name="TitleScreen" type="Control"]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -38,6 +40,20 @@ layout_mode = 2
 theme_override_constants/h_separation = 1
 theme_override_font_sizes/font_size = 16
 text = "Resume"
+icon_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_ubsne")
+
+[node name="TextEdit" type="TextEdit" parent="MarginContainer/VBoxContainer/TextureButton"]
+layout_mode = 0
+offset_right = 141.0
+offset_bottom = 37.0
+theme = ExtResource("3_ete44")
+theme_override_fonts/font = ExtResource("3_4k34r")
+theme_override_font_sizes/font_size = 10
+text = "idkman"
 
 [node name="PlaySound" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
