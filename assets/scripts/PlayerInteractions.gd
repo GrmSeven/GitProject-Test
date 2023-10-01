@@ -17,4 +17,3 @@ func _on_body_exit(body: Node2D):
 	if (active_interactable == body):
 		body.cannot_interact()
 		active_interactable = null
-
