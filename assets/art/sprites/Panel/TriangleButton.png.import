@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kniq4b8uctvw"
-path="res://.godot/imported/TriangleButton.png-d7dadcce2e48c59c5e9c08da446234b3.ctex"
+path="res://.godot/imported/TriangleButton.png-a132610e374490d7c79ce5817e6623f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/sprites/Panel/TriangleButton.png"
-dest_files=["res://.godot/imported/TriangleButton.png-d7dadcce2e48c59c5e9c08da446234b3.ctex"]
+source_file="res://assets/art/sprites/panel/TriangleButton.png"
+dest_files=["res://.godot/imported/TriangleButton.png-a132610e374490d7c79ce5817e6623f9.ctex"]
 
 [params]
 
